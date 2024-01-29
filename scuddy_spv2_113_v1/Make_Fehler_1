@@ -1,0 +1,52 @@
+mcpwm_foc.c: In function 'mcpwm_foc_init':
+mcpwm_foc.c:287:9: warning: unused variable 'pwm_current' [-Wunused-variable]
+  double pwm_current = 0;
+         ^~~~~~~~~~~
+mcpwm_foc.c:286:9: warning: unused variable 'pwm_rpm' [-Wunused-variable]
+  double pwm_rpm = 0;
+         ^~~~~~~
+mcpwm_foc.c:284:11: warning: unused variable 'merker' [-Wunused-variable]
+  uint32_t merker[2];
+           ^~~~~~
+mcpwm_foc.c:283:11: warning: unused variable 'testvalue' [-Wunused-variable]
+  uint32_t testvalue = 0;
+           ^~~~~~~~~
+mcpwm_foc.c:282:11: warning: unused variable 'spi_val' [-Wunused-variable]
+  uint32_t spi_val = 0;
+           ^~~~~~~
+mcpwm_foc.c: In function 'spicontrol_tim_isr':
+mcpwm_foc.c:1893:30: error: 'testvalue' undeclared (first use in this function); did you mean '__ptrvalue'?
+   spicontrol_transfer(&pos, &testvalue, 1);
+                              ^~~~~~~~~
+                              __ptrvalue
+mcpwm_foc.c:1893:30: note: each undeclared identifier is reported only once for each function it appears in
+mcpwm_foc.c:1899:2: error: 'spi_val' undeclared (first use in this function)
+  spi_val = pos;
+  ^~~~~~~
+mcpwm_foc.c: In function 'spicontrol_get_val':
+mcpwm_foc.c:1904:9: error: 'spi_val' undeclared (first use in this function)
+  return spi_val;
+         ^~~~~~~
+mcpwm_foc.c: In function 'example_thread':
+mcpwm_foc.c:2003:5: error: 'pwm_current' undeclared (first use in this function); did you mean 'mcpwm_set_current'?
+     pwm_current = mcpwm_foc_get_tot_current();
+     ^~~~~~~~~~~
+     mcpwm_set_current
+mcpwm_foc.c:2009:56: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+     commands_printf("SPI Receive: %lf",((double)newdata/1000.0));
+                                                        ^
+mcpwm_foc.c:2012:8: error: 'merker' undeclared (first use in this function); did you mean 'setkey'?
+     if(merker[0]!=newdata){
+        ^~~~~~
+        setkey
+mcpwm_foc.c:2037:5: error: 'testvalue' undeclared (first use in this function); did you mean '__ptrvalue'?
+     testvalue=daten_to_spi((pwm_current),1);
+     ^~~~~~~~~
+     __ptrvalue
+mcpwm_foc.c: In function 'spicontrol_get_val':
+mcpwm_foc.c:1905:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+ChibiOS_3.0.2/os/common/ports/ARMCMx/compilers/GCC/rules.mk:208: die Regel für Ziel „build/obj/mcpwm_foc.o“ scheiterte
+make: *** [build/obj/mcpwm_foc.o] Fehler 1
+
