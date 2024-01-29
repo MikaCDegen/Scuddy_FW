@@ -507,7 +507,8 @@ bool mcpwm_foc_is_dccal_done(void) {
 }
 
 //SPI-Kommunikation aufrufen
-app_spicontrol_init()
+void app_spicontrol_init(void){
+}
 
 
 /**
