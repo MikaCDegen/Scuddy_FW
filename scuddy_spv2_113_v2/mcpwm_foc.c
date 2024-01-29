@@ -506,8 +506,11 @@ bool mcpwm_foc_is_dccal_done(void) {
 	return m_dccal_done;
 }
 
-//SPI-Kommunikation aufrufen
-void app_spicontrol_init(void){
+
+/**
+ * SPI-Kommunikation aufrufen
+ */
+bool app_spicontrol_init(void) {
 }
 
 
