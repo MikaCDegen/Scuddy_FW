@@ -55,6 +55,8 @@ CH_IRQ_HANDLER(TIM8_CC_IRQHandler) {
 	if (TIM_GetITStatus(TIM8, TIM_IT_CC1) != RESET) {
 		mcpwm_foc_tim_sample_int_handler();
 
+		//SPI IRQ_Handler
+		spicontrol_tim_isr(); 
 		// Clear the IT pending bit
 		TIM_ClearITPendingBit(TIM8, TIM_IT_CC1);
 	}

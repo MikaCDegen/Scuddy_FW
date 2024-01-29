@@ -35,6 +35,9 @@
 #include <string.h>
 #include <math.h>
 
+#include <app_spicontrol.h>
+#include <hw_410.h>
+
 // EEPROM settings
 #define EEPROM_BASE_MCCONF		1000
 #define EEPROM_BASE_APPCONF		2000
@@ -314,8 +317,8 @@ void save_odo_value(uint32_t value){
 			commands_printf("Flash failed\n");
 		} else {
 			//commands_printf("Flash OK\n");
-		} 
-	}	
+		}
+	}
 	//app_set_configuration(&appconf);
 // save app config
 

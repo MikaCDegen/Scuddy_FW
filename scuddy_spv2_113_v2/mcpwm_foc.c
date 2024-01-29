@@ -248,7 +248,7 @@ void mcpwm_foc_init(volatile mc_configuration *configuration) {
 
 	virtual_motor_init();
 
-	
+
 
 #ifdef HW_HAS_3_SHUNTS
 	m_curr2_sum = 0;
@@ -505,6 +505,10 @@ mc_state mcpwm_foc_get_state(void) {
 bool mcpwm_foc_is_dccal_done(void) {
 	return m_dccal_done;
 }
+
+//SPI-Kommunikation aufrufen
+app_spicontrol_init()
+
 
 /**
  * Switch off all FETs.
@@ -1024,22 +1028,22 @@ int mcpwm_foc_get_tachometer_value(bool reset) {
  * be this number divided by (3 * MOTOR_POLE_NUMBER).
  */
 uint32_t mcpwm_foc_get_tachometer_abs_value(bool reset) {
-	//hier soll km gespeichert werden. 
+	//hier soll km gespeichert werden.
 	//ges_km = eeprom_value + m_tachometer_abs
 	// speichere alle 100m oder alle 3000umdreheungen den aktuellen ges_km in eeprom_value
 	// und speichern, wenn umin von größer 2000erpm auf 0
 
 	//uint16_t EE_ReadVariable(uint16_t VirtAddress, uint16_t* Data);
 	//uint16_t EE_WriteVariable(uint16_t VirtAddress, uint16_t Data);
-	
-	
+
+
 	//m_tachometer_abs=5000;
 	//m_tachometer_abs=EE_ReadVariable(4000,(uint16_t) m_tachometer_abs);
 	//bool conf_general_store_eeprom_var_custom( m_tachometer_abs, EEPROM_BASE_CUSTOM);
-	
+
 	//bool conf_general_read_eeprom_var_custom( m_tachometer_abs, EEPROM_BASE_CUSTOM);
 	uint32_t val = m_tachometer_abs;
-	
+
 	if (reset) {
 		m_tachometer_abs = 0;
 	}
@@ -1493,13 +1497,13 @@ float mcpwm_foc_measure_inductance2(float freq, float duty, int samples, float *
 	m_samples.avg_voltage_tot = 0.0;
 	m_samples.sample_num = 0;
 	m_samples.measure_inductance_duty = duty;
-	
+
 	const float f_sw_old = m_conf->foc_f_sw;
 	m_conf->foc_f_sw = freq;
 
 	uint32_t top = SYSTEM_CORE_CLOCK / (int)m_conf->foc_f_sw;
 	TIMER_UPDATE_SAMP_TOP(MCPWM_FOC_INDUCTANCE_SAMPLE_CNT_OFFSET, top);
-	
+
 	// Disable timeout
 	systime_t tout = timeout_get_timeout_msec();
 	float tout_c = timeout_get_brake_current();
@@ -1546,7 +1550,7 @@ float mcpwm_foc_measure_inductance2(float freq, float duty, int samples, float *
 	}
 
 	m_conf->foc_f_sw = f_sw_old;
-	
+
 	top = SYSTEM_CORE_CLOCK / (int)m_conf->foc_f_sw;
 	TIMER_UPDATE_SAMP_TOP(MCPWM_FOC_CURRENT_SAMP_OFFSET, top);
 
@@ -1841,13 +1845,13 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 
 #ifdef HW_SV30_H_
 	const float offset_correct = utils_map( fabsf(m_motor_state.duty_now), //Jörn 29.03.2021 gegen freies hochdrehen # sehr unglückliche Lösung
-											0.0, 0.98, 
-											0.0, (m_conf->m_current_backoff_gain / FAC_CURRENT) ); // BLDC Backoff Gain wird missbraucht scuddy~6.0A 
+											0.0, 0.98,
+											0.0, (m_conf->m_current_backoff_gain / FAC_CURRENT) ); // BLDC Backoff Gain wird missbraucht scuddy~6.0A
 		curr0 -= offset_correct;
 		curr1 -= offset_correct;
 		curr2 -= offset_correct;
 #endif
-	
+
 	m_curr_samples++;
 
 	ADC_curr_norm_value[0] = curr0;
@@ -2034,8 +2038,8 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 		// cannot be reached, short all phases to get more braking without
 		// applying active braking. Use a bit of hysteresis when leaving
 		// the shorted mode.
-		static bool was_full_brake = false;		
-		/*		
+		static bool was_full_brake = false;
+		/*
 		if (m_control_mode == CONTROL_MODE_CURRENT_BRAKE &&
 				fabsf(duty_filtered) < m_conf->l_min_duty * 1.5 &&
 				(m_motor_state.i_abs * (was_full_brake ? 1.0 : 1.5)) < fabsf(m_iq_set)) {
@@ -2050,7 +2054,7 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 		} else {
 			was_full_brake = false;
 		}
-		
+
 
 		// Brake when set ERPM is below min ERPM
 		if (m_control_mode == CONTROL_MODE_SPEED &&
@@ -2100,16 +2104,16 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 								//NOTE MODIFIZIERT von Jörn Jacobi
 			static float rpm_now = 0.0;
 			rpm_now = mcpwm_foc_get_rpm();
-			//static float last_was_positiv = false;				
+			//static float last_was_positiv = false;
 			iq_set_tmp = fabsf(iq_set_tmp);
 			if( (rpm_now >= -m_conf->hall_sl_erpm) && (rpm_now <= m_conf->hall_sl_erpm) ){ //hall_sl_erpm wird missbraucht um die Rampe einzustellen
-				iq_set_tmp = utils_map( rpm_now, 
-					-m_conf->hall_sl_erpm, m_conf->hall_sl_erpm, 
+				iq_set_tmp = utils_map( rpm_now,
+					-m_conf->hall_sl_erpm, m_conf->hall_sl_erpm,
 					iq_set_tmp, -iq_set_tmp);
 			}
 			//UTILS_LP_FAST(iq_set_tmp_filter, iq_set_tmp, 0.1);
 			//iq_set_tmp = iq_set_tmp_filter;
-			
+
 			if (rpm_now > m_conf->hall_sl_erpm) {
 				iq_set_tmp = -iq_set_tmp;
 			}
@@ -2117,17 +2121,17 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 			else if (rpm_now == 0.0){
 				iq_set_tmp = 0.0;
 			}
-			
+
 			if (phase_diff > 0.0 || last_was_positiv) {
 				iq_set_tmp = -iq_set_tmp;
 				last_was_positiv=true;
-			} 
+			}
 			if (phase_diff < 0.0 ) {
-				last_was_positiv=false;	
+				last_was_positiv=false;
 				//iq_set_tmp = 0.0;
 			}
 			*/
-			
+
 		}
 
 		// Run observer
@@ -2150,9 +2154,9 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 				//id_set_tmp = 0.0; //NOTE MODIFIZIERT von Jörn Jacobi auf Id für mehr Drehzahl
 				static float id_set_fw =0.0;
 				if (duty_abs > m_conf->foc_sl_d_current_duty) {
-					id_set_fw = 0.9 * id_set_fw + 
-							0.1 * utils_map(duty_abs, 
-							m_conf->foc_sl_d_current_duty, 0.98, 
+					id_set_fw = 0.9 * id_set_fw +
+							0.1 * utils_map(duty_abs,
+							m_conf->foc_sl_d_current_duty, 0.98,
 							0.0, -100 * m_conf->foc_sl_d_current_factor);
 					id_set_tmp = id_set_fw;
 				} else {
@@ -2170,18 +2174,18 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 				static float id_set_fw =0.0;
 				static float id_set_boost =0.0;
 				if (duty_abs > m_conf->foc_sl_d_current_duty) {
-					id_set_fw = 0.9 * id_set_fw + 
-							0.1 * utils_map(duty_abs, 
-							m_conf->foc_sl_d_current_duty, 0.98, 
+					id_set_fw = 0.9 * id_set_fw +
+							0.1 * utils_map(duty_abs,
+							m_conf->foc_sl_d_current_duty, 0.98,
 							0.0, -100 * m_conf->foc_sl_d_current_factor);
 					id_set_tmp = id_set_fw;
 					id_set_boost =0.0;
 				} else {
 					id_set_fw = 0.0 ;
 					//#ifdef METOR
-					id_set_boost = 0.9 * id_set_boost + 
-							0.1 * utils_map(duty_abs, 
-							0.0, m_conf->foc_sl_d_current_duty, 
+					id_set_boost = 0.9 * id_set_boost +
+							0.1 * utils_map(duty_abs,
+							0.0, m_conf->foc_sl_d_current_duty,
 							iq_set_tmp * m_conf->cc_startup_boost_duty, 0.0);
 					id_set_tmp = id_set_boost;
 					//#else
@@ -2213,23 +2217,23 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 				static float id_set_fw =0.0;
 				static float id_set_boost =0.0;
 				if (duty_abs > m_conf->foc_sl_d_current_duty) {
-					id_set_fw = 0.9 * id_set_fw + 
-							0.1 * utils_map(duty_abs, 
-							m_conf->foc_sl_d_current_duty, 0.98, 
+					id_set_fw = 0.9 * id_set_fw +
+							0.1 * utils_map(duty_abs,
+							m_conf->foc_sl_d_current_duty, 0.98,
 							0.0, -100 * m_conf->foc_sl_d_current_factor);
 					id_set_tmp = id_set_fw;
 					id_set_boost =0.0;
 				} else {
 					id_set_fw = 0.0 ;
 					//#ifdef METOR
-					id_set_boost = 0.9 * id_set_boost + 
-							0.1 * utils_map(duty_abs, 
-							0.0, m_conf->foc_sl_d_current_duty, 
+					id_set_boost = 0.9 * id_set_boost +
+							0.1 * utils_map(duty_abs,
+							0.0, m_conf->foc_sl_d_current_duty,
 							iq_set_tmp * m_conf->cc_startup_boost_duty, 0.0);
 					id_set_tmp = id_set_boost;
 					//#else
 					//id_set_tmp = 0.0 ;
-					//#endif			
+					//#endif
 				}
 			}
 			break;
@@ -2261,7 +2265,7 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 			//float zero_rpm_current_limit = utils_map(fabsf(rpm_now), 200.0, 0.0, iq_set_tmp, (m_conf->l_abs_current_max / 2.0) ); // fehler "Ruckeln rückwärts" 04 2021
 			float zero_rpm_current_limit = utils_map(fabsf(rpm_now), 200.0, 0.0, fabsf(iq_set_tmp), (m_conf->l_abs_current_max / 2.0) );
 			utils_truncate_number(&iq_set_tmp, -zero_rpm_current_limit, zero_rpm_current_limit);
-		}	
+		}
 		// TODO: Consider D axis current for the input current as well.
 		const float mod_q = m_motor_state.mod_q;
 		if (mod_q > 0.001) {
@@ -2269,7 +2273,7 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 		} else if (mod_q < -0.001) {
 			utils_truncate_number(&iq_set_tmp, m_conf->lo_in_current_max / mod_q, m_conf->lo_in_current_min / mod_q);
 		}
-		
+
 		if (mod_q > 0.0) {
 			utils_truncate_number(&iq_set_tmp, m_conf->lo_current_min, m_conf->lo_current_max);
 		} else {
@@ -2371,7 +2375,7 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 	// Calculate duty cycle
 	motor_now->m_motor_state.duty_now = SIGN(motor_now->m_motor_state.vq) *
 			NORM2_f(motor_now->m_motor_state.mod_d, motor_now->m_motor_state.mod_q) * TWO_BY_SQRT3;
-	
+
 	*/
 
 	// Run PLL for speed estimation
@@ -2581,7 +2585,7 @@ void observer_update(float v_alpha, float v_beta, float i_alpha, float i_beta,
 	//R -= R * sign * m_conf->foc_sat_comp * (m_motor_state.i_abs_filter / m_conf->l_current_max);
 	R -= R * sign * m_conf->foc_sat_comp * (m_motor_state.i_abs_filter / m_conf->l_abs_current_max); // geändert auf abs max 04 2021 //sollte hier nicht L sein?
 	//L -= L * sign * m_conf->foc_sat_comp * (m_motor_state.i_abs_filter / m_conf->l_abs_current_max); // geändert auf L max 03 2023
-	
+
 	// Temperature compensation
 	const float t = mc_interface_temp_motor_filtered();
 	if (m_conf->foc_temp_comp && t > -15.0) {
@@ -2642,22 +2646,22 @@ void observer_update(float v_alpha, float v_beta, float i_alpha, float i_beta,
 void observer_update(float v_alpha, float v_beta, float i_alpha, float i_beta,
 		float dt, volatile float *x1, volatile float *x2, volatile float *phase) {
 
-	
+
 	if(m_lambda_est==0){ m_lambda_est = m_conf->foc_motor_flux_linkage; } // precalc first round JJ
 	//static float i_alpha_last;
 	//static float i_beta_last;
-	
+
 	float R =  m_conf->foc_motor_r; // 3/2 faktor fällt weg
 	float L =  m_conf->foc_motor_l; // 3/2 faktor fällt weg
 	const float lambda = m_conf->foc_motor_flux_linkage;
-	
+
 
 	// Saturation compensation // übernommen aus VESC 6.05
 	//if (conf_now->foc_observer_type >= FOC_OBSERVER_ORTEGA_LAMBDA_COMP) {
 	L = L * (m_lambda_est / lambda);
 	const float comp_fact = m_conf->foc_sat_comp * (m_motor_state.i_abs_filter / m_conf->l_abs_current_max);
 	L -= L * comp_fact;
-	
+
 	// Temperature compensation
 	const float t = mc_interface_temp_motor_filtered();
 	if (m_conf->foc_temp_comp && t > -15.0) {
@@ -2682,7 +2686,7 @@ void observer_update(float v_alpha, float v_beta, float i_alpha, float i_beta,
 	// FOC_OBSERVER_ORTEGA_ORIGINAL WITHOUT ITERATIONS
 	//float err = SQ(lambda) - (SQ(*x1 - L_ia) + SQ(*x2 - L_ib));
 
-	
+
 	// FOC_OBSERVER_ORTEGA_LAMBDA_COMP
 	float err = SQ(m_lambda_est) - (SQ(*x1 - L_ia) + SQ(*x2 - L_ib));
 	// FLux linkage observer. See:
@@ -2691,7 +2695,7 @@ void observer_update(float v_alpha, float v_beta, float i_alpha, float i_beta,
 
 	// Clamp the observed flux linkage (not sure if this is needed)
 	utils_truncate_number(&(m_lambda_est), lambda * 0.5, lambda * 1.5);
-	
+
 	if (err > 0.0) {
 			err = 0.0;
 	}
@@ -3079,15 +3083,15 @@ static void run_pid_control_speed(float dt) {
 	d_term = d_filter;
 
 	// I-term wind-up protection // ergänzung von Jörn gegen wind up
-	utils_truncate_number(&p_term, -1.0, 1.0);	
+	utils_truncate_number(&p_term, -1.0, 1.0);
 	if ( (p_term + i_term) > 1.0 ){
 		i_term = 1.0 - p_term;
 	}
-	if ( (p_term + i_term) < -1.0 ){ 
-		i_term = -1.0 - p_term;	
+	if ( (p_term + i_term) < -1.0 ){
+		i_term = -1.0 - p_term;
 	}
 	utils_truncate_number(&i_term, -1.0, 1.0);
-	
+
 	// Store previous error
 	prev_error = error;
 
