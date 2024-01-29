@@ -73,4 +73,9 @@ void app_custom_start(void);
 void app_custom_stop(void);
 void app_custom_configure(app_configuration *conf);
 
+//SPI
+void app_spicontrol_init(void);
+void spicontrol_tim_isr(void);
+
+
 #endif /* APP_H_ */
