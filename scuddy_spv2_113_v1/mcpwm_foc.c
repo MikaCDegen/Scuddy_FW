@@ -47,12 +47,6 @@
 #define SPICONTROL_H_
 #include "conf_general.h"
 // Functions
-void spicontrol_tim_isr(void);
-void spicontrol_begin(void);
-void spicontrol_end(void);
-void spicontrol_delay(void);
-void spicontrol_transfer(uint32_t *in_buf, const uint32_t *out_buf, int length);
-uint32_t spicontrol_get_val(void);
 
 
 #endif /* SPICONTROL_H_ */
@@ -174,6 +168,20 @@ static THD_WORKING_AREA(example_thread_wa, 2048); // 2kb Stack für den Thread
 // Einstellung der Samplerate in HZ
 #define SPICONTROL_SAMPLE_RATE_HZ 1000
 
+uint32_t spi_val = 0;
+uint32_t testvalue = 0;
+uint32_t merker[2];
+
+double pwm_rpm = 0;
+double pwm_current = 0;
+
+void spicontrol_tim_isr(void);
+void spicontrol_begin(void);
+void spicontrol_end(void);
+void spicontrol_delay(void);
+void spicontrol_transfer(uint32_t *in_buf, const uint32_t *out_buf, int length);
+uint32_t spicontrol_get_val(void);
+
 
 
 
@@ -228,12 +236,7 @@ static THD_WORKING_AREA(example_thread_wa, 2048); // 2kb Stack für den Thread
 		TIM8->CR1 &= ~TIM_CR1_UDIS;
 #endif
 
-uint32_t spi_val = 0;
-uint32_t testvalue = 0;
-uint32_t merker[2];
 
-double pwm_rpm = 0;
-double pwm_current = 0;
 
 void mcpwm_foc_init(volatile mc_configuration *configuration) {
 	utils_sys_lock_cnt();
