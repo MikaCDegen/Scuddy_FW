@@ -77,7 +77,7 @@ void app_set_configuration(app_configuration *conf) {
 	// Configure balance app before starting it.
 	app_balance_configure(&appconf.app_balance_conf, &appconf.imu_conf);
 	app_adc_configure(&appconf.app_adc_conf, &appconf.app_balance_conf, &appconf.imu_conf);
-		
+
 
 	switch (appconf.app_to_use) {
 	case APP_PPM:
@@ -127,9 +127,10 @@ void app_set_configuration(app_configuration *conf) {
 	case APP_CUSTOM:
 		app_adc_start(false, true);
 		app_uartcomm_start();
+		app_spicontrol_init();
 		break;
 
-	default:		
+	default:
 		break;
 	}
 
