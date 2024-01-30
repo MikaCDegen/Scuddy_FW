@@ -25,6 +25,7 @@
 #include "mcpwm_foc.h"
 #include "hw.h"
 #include "encoder.h"
+#include "app_spicontrol.h"
 
 CH_IRQ_HANDLER(ADC1_2_3_IRQHandler) {
 	CH_IRQ_PROLOGUE();
