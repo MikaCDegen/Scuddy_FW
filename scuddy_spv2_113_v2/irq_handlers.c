@@ -25,8 +25,8 @@
 #include "mcpwm_foc.h"
 #include "hw.h"
 #include "encoder.h"
-#include "app_spicontrol.h"
-#include "commands.h"
+//#include "app_spicontrol.h"							STM32_Schleife
+//#include "commands.h"										STM32_Schleife
 
 CH_IRQ_HANDLER(ADC1_2_3_IRQHandler) {
 	CH_IRQ_PROLOGUE();
@@ -48,8 +48,8 @@ CH_IRQ_HANDLER(HW_ENC_TIM_ISR_VEC) {
 	if (TIM_GetITStatus(HW_ENC_TIM, TIM_IT_Update) != RESET) {
 		encoder_tim_isr();
 		//SPI IRQ_Handler
-		spicontrol_tim_isr();
-	 commands_printf("Interrupt");
+	 // spicontrol_tim_isr(); 							STM32_Schleife
+	 // commands_printf("Interrupt"); 			STM32_Schleife
 		// Clear the IT pending bit
 		TIM_ClearITPendingBit(HW_ENC_TIM, TIM_IT_Update);
 	}
