@@ -507,12 +507,6 @@ bool mcpwm_foc_is_dccal_done(void) {
 }
 
 
-/**
- * SPI-Kommunikation aufrufen
- */
-bool app_spicontrol_init(void) {
-}
-
 
 /**
  * Switch off all FETs.
