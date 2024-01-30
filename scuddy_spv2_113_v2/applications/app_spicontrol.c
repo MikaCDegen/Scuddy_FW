@@ -249,7 +249,7 @@ static THD_FUNCTION(example_thread, arg) {
 
 	//Aufrufen der Funktion zum Senden der Messdaten an Matlab
     testvalue=daten_to_spi((pwm_current),1);
-    commands_printf("pwm_current: %lf", pwm_current);
+    commands_printf("pwm_current      : %lf", pwm_current);
     commands_printf("SPI Send: %d", testvalue);
 
     // Kleines Verzögerung, damit der Thread den STM nicht überlastet
