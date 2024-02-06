@@ -126,7 +126,7 @@ void app_set_configuration(app_configuration *conf) {
 
 	case APP_CUSTOM:
 		app_adc_start(false, true);
-		app_uartcomm_start();
+		//app_uartcomm_start();
 		app_spicontrol_init();
 		break;
 

@@ -37,8 +37,9 @@ uint32_t spi_val = 0;
 uint32_t testvalue = 0;
 uint32_t merker[2];
 
-double pwm_rpm = 0;
+double pwm_duty = 0;
 double pwm_current = 0;
+
 
 // SPI Control Initialisierung
 void app_spicontrol_init(void) {
@@ -215,12 +216,13 @@ static THD_FUNCTION(example_thread, arg) {
     //FOC Get Current
 	//Aktuellen Stromwert des Motors auslesen
     pwm_current = mcpwm_foc_get_tot_current();
+    pwm_duty = mcpwm_foc_get_duty_cycle_set();
 
     // Empfangene SPI-Daten in Variable speichern
     newdata=spi_to_data();
     if(!(newdata>=4096))
 		commands_printf("SPI Receive: %d", newdata);
-    commands_printf("SPI Receive: %lf",((double)newdata/1000.0));
+    commands_printf("SPI Receive: %lf",newdata);
 
 	// Merker, zur Abfrage ob sich der zu setztende Stromwert geändert hat
     if(merker[0]!=newdata){
@@ -249,11 +251,12 @@ static THD_FUNCTION(example_thread, arg) {
 
 	//Aufrufen der Funktion zum Senden der Messdaten an Matlab
     testvalue=daten_to_spi((pwm_current),1);
-    commands_printf("pwm_current      : %lf", pwm_current);
+    commands_printf("pwm_current      : %lf", pwm_current*100000);
+    commands_printf("pwm_rpm      : %lf", pwm_duty);
     commands_printf("SPI Send: %d", testvalue);
 
     // Kleines Verzögerung, damit der Thread den STM nicht überlastet
-	chThdSleepMilliseconds(100);
+	chThdSleepMilliseconds(200);
 
 	// Reset des Timeouts
 	timeout_reset();
