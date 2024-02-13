@@ -230,6 +230,7 @@ void SPI_Disable (void)
 
 void CS_Enable (void)
 {
+
 	palClearPad(GPIOA, 9); // Setzt Bit 25, um Pin 9 zurückzusetzen
 }
 
