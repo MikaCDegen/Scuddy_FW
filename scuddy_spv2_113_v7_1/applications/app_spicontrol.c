@@ -55,6 +55,18 @@ void app_spicontrol_init(void) {
 	TIM_ITConfig(HW_ENC_TIM, TIM_IT_Update, ENABLE);
 	TIM_Cmd(HW_ENC_TIM, ENABLE);
 
+// Konfiguration des Timers für ein 50:50 Tastverhältnis
+TIM_OCInitTypeDef TIM_OCStruct = {0};
+
+// Konfigurieren Sie den Output Compare Mode des Timers
+TIM_OCStruct.TIM_OCMode = TIM_OCMode_PWM1; // PWM1 für ein Tastverhältnis von 50:50
+TIM_OCStruct.TIM_OutputState = TIM_OutputState_Enable;
+TIM_OCStruct.TIM_Pulse = TIM_TimeBaseStructure.TIM_Period / 2; // Setzen des Pulses auf die Hälfte der Periodendauer
+TIM_OCStruct.TIM_OCPolarity = TIM_OCPolarity_High; // oder Low, abhängig von der erforderlichen Polarität
+
+// Initialisieren des Output Compare Channel (z.B. Channel 1)
+TIM_OC1Init(HW_ENC_TIM, &TIM_OCStruct);
+TIM_OC1PreloadConfig(HW_ENC_TIM, TIM_OCPreload_Enable);
 
 
 
@@ -131,21 +143,7 @@ void spicontrol_transfer(uint32_t *in_buf, const uint32_t *out_buf, int length) 
 		}
 	}
 }
-
-// Funktion zum Setzen von SPI-NSS (CS) auf LOW
-void spicontrol_begin(void) {
-	palClearPad(HW_SPI_PORT_NSS, HW_SPI_PIN_NSS);
-}
-
-// Funktion zum Setzen von SPI-NSS (CS) auf HIGH
-void spicontrol_end(void) {
-	palSetPad(HW_SPI_PORT_NSS, HW_SPI_PIN_NSS);
-}
-
-// Funktion zum Auslösen eines minimalen Delays
-void spicontrol_delay(void) {
-	__NOP();
-	__NOP();
+168
 	__NOP();
 	__NOP();
 }
@@ -238,7 +236,7 @@ static THD_FUNCTION(example_thread, arg) {
     commands_printf("SPI Send: %d", testvalue);
 
     // Kleines Verzögerung, damit der Thread den STM nicht überlastet
-	chThdSleepMilliseconds(100);
+	chThdSleepMilliseconds(1);
 
 	// Reset des Timeouts
 	timeout_reset();
