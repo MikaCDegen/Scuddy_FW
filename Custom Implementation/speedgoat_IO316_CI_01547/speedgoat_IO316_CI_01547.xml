@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+      		<SubSystem>
+		<Name>dio</Name>
+		<xPCName>speedgoat_IO316_CI_01547/dio</xPCName>
+				<SubSystem>
+		<Name>GainLow</Name>
+		<xPCName>speedgoat_IO316_CI_01547/dio/GainLow</xPCName>
+		
+		
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>dio/GainLow/Gain</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/GainLow/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>dio/GainLow/Gain1</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/GainLow/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>dio/GainLow/Gain2</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/GainLow/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>dio/GainLow/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>dio/GainLow/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>dio/GainLow/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>GainLow1</Name>
+		<xPCName>speedgoat_IO316_CI_01547/dio/GainLow1</xPCName>
+		
+		
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>dio/GainLow1/Gain</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/GainLow1/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>dio/GainLow1/Gain1</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/GainLow1/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>dio/GainLow1/Gain2</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/GainLow1/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow1</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>dio/GainLow1/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow1</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>dio/GainLow1/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow1</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>dio/GainLow1/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio/GainLow1</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Scope 1</Name>
+		<xPCName>speedgoat_IO316_CI_01547/dio/Scope 1</xPCName>
+		
+		
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Scope 2</Name>
+		<xPCName>speedgoat_IO316_CI_01547/dio/Scope 2</xPCName>
+		
+		
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Pulse
+Generator</blkName>
+            <xpcblkName>dio/Pulse Generator</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/Pulse Generator</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>Period</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>PulseWidth</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>PhaseDelay</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Digital input</blkName>
+            <xpcblkName>dio/Digital input</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/Digital input</SLblockPath>
+            <isSrc>[1 0 8]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 8]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Digital output</blkName>
+            <xpcblkName>dio/Digital output</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/dio/Digital output</SLblockPath>
+            <isSrc>[0 8 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 8]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 8]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 8]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Pulse
+Generator</sigName>
+              <xpcsigName>dio/Pulse Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p1</sigName>
+              <xpcsigName>dio/Digital input/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p2</sigName>
+              <xpcsigName>dio/Digital input/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p3</sigName>
+              <xpcsigName>dio/Digital input/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p4</sigName>
+              <xpcsigName>dio/Digital input/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p5</sigName>
+              <xpcsigName>dio/Digital input/p5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p6</sigName>
+              <xpcsigName>dio/Digital input/p6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p7</sigName>
+              <xpcsigName>dio/Digital input/p7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p8</sigName>
+              <xpcsigName>dio/Digital input/p8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/dio</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>spi</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi</xPCName>
+				<SubSystem>
+		<Name>Counter
+Free-Running1</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1</xPCName>
+				<SubSystem>
+		<Name>Increment
+Real World</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Increment Real World</xPCName>
+		
+		
+            <block>
+            <blkName>FixPt
+Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running1/Increment Real World/FixPt Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Increment Real World/FixPt Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Increment Real World</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Sum1</sigName>
+              <xpcsigName>spi/Counter Free-Running1/Increment Real World/FixPt Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Increment Real World</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Wrap To Zero</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Wrap To Zero</xPCName>
+		
+		
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running1/Wrap To Zero/Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Wrap To Zero/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>FixPt
+Switch</blkName>
+            <xpcblkName>spi/Counter Free-Running1/Wrap To Zero/FixPt Switch</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Wrap To Zero/FixPt Switch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Switch</sigName>
+              <xpcsigName>spi/Counter Free-Running1/Wrap To Zero/FixPt Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Wrap To Zero</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Wrap To Zero</blkName>
+            <xpcblkName>spi/Counter Free-Running1/Wrap To Zero</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Wrap To Zero</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Output</blkName>
+            <xpcblkName>spi/Counter Free-Running1/Output</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running1/Output</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Output</sigName>
+              <xpcsigName>spi/Counter Free-Running1/Output</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running1</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Counter
+Free-Running2</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2</xPCName>
+				<SubSystem>
+		<Name>Increment
+Real World</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Increment Real World</xPCName>
+		
+		
+            <block>
+            <blkName>FixPt
+Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running2/Increment Real World/FixPt Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Increment Real World/FixPt Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Increment Real World</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Sum1</sigName>
+              <xpcsigName>spi/Counter Free-Running2/Increment Real World/FixPt Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Increment Real World</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Wrap To Zero</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Wrap To Zero</xPCName>
+		
+		
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running2/Wrap To Zero/Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Wrap To Zero/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>FixPt
+Switch</blkName>
+            <xpcblkName>spi/Counter Free-Running2/Wrap To Zero/FixPt Switch</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Wrap To Zero/FixPt Switch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Switch</sigName>
+              <xpcsigName>spi/Counter Free-Running2/Wrap To Zero/FixPt Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Wrap To Zero</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Wrap To Zero</blkName>
+            <xpcblkName>spi/Counter Free-Running2/Wrap To Zero</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Wrap To Zero</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Output</blkName>
+            <xpcblkName>spi/Counter Free-Running2/Output</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running2/Output</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Output</sigName>
+              <xpcsigName>spi/Counter Free-Running2/Output</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running2</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Counter
+Free-Running3</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3</xPCName>
+				<SubSystem>
+		<Name>Increment
+Real World</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Increment Real World</xPCName>
+		
+		
+            <block>
+            <blkName>FixPt
+Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running3/Increment Real World/FixPt Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Increment Real World/FixPt Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Increment Real World</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Sum1</sigName>
+              <xpcsigName>spi/Counter Free-Running3/Increment Real World/FixPt Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Increment Real World</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Wrap To Zero</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Wrap To Zero</xPCName>
+		
+		
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running3/Wrap To Zero/Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Wrap To Zero/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>FixPt
+Switch</blkName>
+            <xpcblkName>spi/Counter Free-Running3/Wrap To Zero/FixPt Switch</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Wrap To Zero/FixPt Switch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Switch</sigName>
+              <xpcsigName>spi/Counter Free-Running3/Wrap To Zero/FixPt Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Wrap To Zero</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Wrap To Zero</blkName>
+            <xpcblkName>spi/Counter Free-Running3/Wrap To Zero</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Wrap To Zero</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Output</blkName>
+            <xpcblkName>spi/Counter Free-Running3/Output</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running3/Output</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Output</sigName>
+              <xpcsigName>spi/Counter Free-Running3/Output</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running3</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Counter
+Free-Running4</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4</xPCName>
+				<SubSystem>
+		<Name>Increment
+Real World</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Increment Real World</xPCName>
+		
+		
+            <block>
+            <blkName>FixPt
+Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running4/Increment Real World/FixPt Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Increment Real World/FixPt Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Increment Real World</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Sum1</sigName>
+              <xpcsigName>spi/Counter Free-Running4/Increment Real World/FixPt Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Increment Real World</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Wrap To Zero</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Wrap To Zero</xPCName>
+		
+		
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>spi/Counter Free-Running4/Wrap To Zero/Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Wrap To Zero/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>FixPt
+Switch</blkName>
+            <xpcblkName>spi/Counter Free-Running4/Wrap To Zero/FixPt Switch</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Wrap To Zero/FixPt Switch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Wrap To Zero</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>FixPt
+Switch</sigName>
+              <xpcsigName>spi/Counter Free-Running4/Wrap To Zero/FixPt Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Wrap To Zero</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Wrap To Zero</blkName>
+            <xpcblkName>spi/Counter Free-Running4/Wrap To Zero</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Wrap To Zero</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Output</blkName>
+            <xpcblkName>spi/Counter Free-Running4/Output</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Counter Free-Running4/Output</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Output</sigName>
+              <xpcsigName>spi/Counter Free-Running4/Output</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi/Counter Free-Running4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Scope </Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Scope </xPCName>
+		
+		
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Scope 1</Name>
+		<xPCName>speedgoat_IO316_CI_01547/spi/Scope 1</xPCName>
+		
+		
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>spi/Constant</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>spi/Constant1</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>spi/Constant2</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>spi/Constant3</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>SPI</blkName>
+            <xpcblkName>spi/SPI</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/SPI</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>SPI2</blkName>
+            <xpcblkName>spi/SPI2</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/spi/SPI2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>spi/Data Type Conversion1</xpcsigName>
+              <sigWidth>4</sigWidth>
+              <sigDim>[4, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>spi/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>spi/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion4</sigName>
+              <xpcsigName>spi/Data Type Conversion4</xpcsigName>
+              <sigWidth>4</sigWidth>
+              <sigDim>[4, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion5</sigName>
+              <xpcsigName>spi/Data Type Conversion5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion6</sigName>
+              <xpcsigName>spi/Data Type Conversion6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>SPI</sigName>
+              <xpcsigName>spi/SPI</xpcsigName>
+              <sigWidth>4</sigWidth>
+              <sigDim>[4, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>SPI2</sigName>
+              <xpcsigName>spi/SPI2</xpcsigName>
+              <sigWidth>4</sigWidth>
+              <sigDim>[4, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01547/spi</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+      
+            <block>
+            <blkName>Setup</blkName>
+            <xpcblkName>Setup</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01547/Setup</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1485304, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01547</SubSystemName>
+          </parameter>
+          </block>
+
+</Root>
