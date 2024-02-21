@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+      		<SubSystem>
+		<Name>DIO</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</xPCName>
+				<SubSystem>
+		<Name>DIO 1</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/DIO 1</xPCName>
+		
+		
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Gain-O-Mat1</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</xPCName>
+		
+		
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>DIO/Gain-O-Mat1/Gain1</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>DIO/Gain-O-Mat1/Gain2</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>DIO/Gain-O-Mat1/Gain3</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain4</blkName>
+            <xpcblkName>DIO/Gain-O-Mat1/Gain4</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1/Gain4</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain5</blkName>
+            <xpcblkName>DIO/Gain-O-Mat1/Gain5</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1/Gain5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain6</blkName>
+            <xpcblkName>DIO/Gain-O-Mat1/Gain6</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1/Gain6</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>DIO/Gain-O-Mat1/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+                <sigLabel>REF</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>DIO/Gain-O-Mat1/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+                <sigLabel>Dio32</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>DIO/Gain-O-Mat1/Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+                <sigLabel>Dio33</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>DIO/Gain-O-Mat1/Gain4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+                <sigLabel>Dio34</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain5</sigName>
+              <xpcsigName>DIO/Gain-O-Mat1/Gain5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+                <sigLabel>Dio35</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain6</sigName>
+              <xpcsigName>DIO/Gain-O-Mat1/Gain6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Gain-O-Mat1</SubSystemName>
+                <sigLabel>Dio36</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Pulse
+Generator</blkName>
+            <xpcblkName>DIO/Pulse Generator</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Pulse Generator</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>Period</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>PulseWidth</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>PhaseDelay</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Digital input</blkName>
+            <xpcblkName>DIO/Digital input</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Digital input</SLblockPath>
+            <isSrc>[1 0 5]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 5]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Digital output</blkName>
+            <xpcblkName>DIO/Digital output</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/DIO/Digital output</SLblockPath>
+            <isSrc>[0 5 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 5]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 5]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 5]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Pulse
+Generator</sigName>
+              <xpcsigName>DIO/Pulse Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+                <sigLabel>Ref</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p1</sigName>
+              <xpcsigName>DIO/Digital input/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p2</sigName>
+              <xpcsigName>DIO/Digital input/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p3</sigName>
+              <xpcsigName>DIO/Digital input/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p4</sigName>
+              <xpcsigName>DIO/Digital input/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Digital input/p5</sigName>
+              <xpcsigName>DIO/Digital input/p5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/DIO</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>LRC
+</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </xPCName>
+				<SubSystem>
+		<Name>Subsystem</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC /Subsystem</xPCName>
+				<SubSystem>
+		<Name>DIO 1</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC /Subsystem/DIO 1</xPCName>
+		
+		
+
+		</SubSystem>
+
+		
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Discrete-Time
+Integrator</blkName>
+            <xpcblkName>LRC /Discrete-Time Integrator</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/LRC /Discrete-Time Integrator</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>UpperSaturationLimit</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>LowerSaturationLimit</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Discrete-Time
+Integrator1</blkName>
+            <xpcblkName>LRC /Discrete-Time Integrator1</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/LRC /Discrete-Time Integrator1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>UpperSaturationLimit</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>LowerSaturationLimit</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain5</blkName>
+            <xpcblkName>LRC /Gain5</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/LRC /Gain5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Step</blkName>
+            <xpcblkName>LRC /Step</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/LRC /Step</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Time</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>Before</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>After</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Discrete-Time
+Integrator</sigName>
+              <xpcsigName>LRC /Discrete-Time Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Discrete-Time
+Integrator1</sigName>
+              <xpcsigName>LRC /Discrete-Time Integrator1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+                <sigLabel>U_C</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>LRC /Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>LRC /Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+                <sigLabel>I_L</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>LRC /Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+                <sigLabel>U_L</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>LRC /Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>LRC /Gain4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain5</sigName>
+              <xpcsigName>LRC /Gain5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+                <sigLabel>U_in1</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Step</sigName>
+              <xpcsigName>LRC /Step</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+                <sigLabel>U_in</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Subtract</sigName>
+              <xpcsigName>LRC /Subtract</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/LRC </SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>SPI</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</xPCName>
+				<SubSystem>
+		<Name>Scope (xPC) 1</Name>
+		<xPCName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI/Scope (xPC) 1</xPCName>
+		
+		
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>SPI/Constant3</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/SPI/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>SPI Master</blkName>
+            <xpcblkName>SPI/SPI Master</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/SPI/SPI Master</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>SPI/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+                <sigLabel>REF-M</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>SPI Master</sigName>
+              <xpcsigName>SPI/SPI Master</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft/SPI</SubSystemName>
+                <sigLabel>SPI-M</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+      
+            <block>
+            <blkName>Setup</blkName>
+            <xpcblkName>Setup</xpcblkName>
+            <SLblockPath>speedgoat_IO316_CI_01476_R15b_laeuft/Setup</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1485028, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+          </parameter>
+          </block>
+
+<block>
+   <blkName>Model Parameters</blkName>
+   <xpcblkName>Model Parameters</xpcblkName>
+   <SLblockPath>. </SLblockPath>
+   <isSrc>[0 1 1]</isSrc>
+   <parameter>
+      <paramName>C</paramName>
+          <dim>[1,1]</dim>
+		 <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+   </parameter>
+   <parameter>
+      <paramName>L</paramName>
+          <dim>[1,1]</dim>
+		 <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+   </parameter>
+   <parameter>
+      <paramName>R</paramName>
+          <dim>[1,1]</dim>
+		 <SubSystemName>speedgoat_IO316_CI_01476_R15b_laeuft</SubSystemName>
+   </parameter>
+</block>
+</Root>
