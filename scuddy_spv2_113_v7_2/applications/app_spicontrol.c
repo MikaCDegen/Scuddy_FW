@@ -236,7 +236,7 @@ static THD_FUNCTION(example_thread, arg) {
     commands_printf("SPI Send: %d", testvalue);
 
     // Kleines Verzögerung, damit der Thread den STM nicht überlastet
-	chThdSleepMilliseconds(100);
+	chThdSleepMilliseconds(100000);
 
 	// Reset des Timeouts
 	timeout_reset();
