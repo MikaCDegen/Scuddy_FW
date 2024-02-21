@@ -270,7 +270,7 @@ data.
 	uint8_t temp = SPI1->DR;
 					temp = SPI1->SR;
 }
-	uint8_t data[3] = {0x02, 0x32, 0xf6};
+	uint8_t data = 5;
 
 
 int main(void) {
