@@ -5458,8 +5458,9 @@ destructors     0x000000000800c000        0x0
                 0x000000000802cb10      0x4f8 build/obj/app_balance.o
  *fill*         0x000000000802d008        0x8 
  .text.app_spicontrol_init
-                0x000000000802d010       0xa0 build/obj/app_spicontrol.o
+                0x000000000802d010       0x9c build/obj/app_spicontrol.o
                 0x000000000802d010                app_spicontrol_init
+ *fill*         0x000000000802d0ac        0x4 
  .text.spicontrol_transfer
                 0x000000000802d0b0       0x90 build/obj/app_spicontrol.o
                 0x000000000802d0b0                spicontrol_transfer
@@ -10516,7 +10517,7 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_ranges  0x000000000000a9d0      0x2d0 build/obj/stm32f4xx_tim.o
  .debug_ranges  0x000000000000aca0       0x38 build/obj/stm32f4xx_iwdg.o
 
-.debug_line     0x0000000000000000    0x317e9
+.debug_line     0x0000000000000000    0x317ea
  .debug_line    0x0000000000000000      0x142 build/obj/crt1.o
  .debug_line    0x0000000000000142      0x135 build/obj/vectors.o
  .debug_line    0x0000000000000277      0x446 build/obj/chsys.o
@@ -10591,46 +10592,46 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_line    0x000000000001e724      0x5b9 build/obj/app_uartcomm.o
  .debug_line    0x000000000001ecdd      0x9a4 build/obj/app_nunchuk.o
  .debug_line    0x000000000001f681      0x7e5 build/obj/app_balance.o
- .debug_line    0x000000000001fe66      0x72d build/obj/app_spicontrol.o
- .debug_line    0x0000000000020593      0x637 build/obj/spi_sw.o
- .debug_line    0x0000000000020bca      0x900 build/obj/rf.o
- .debug_line    0x00000000000214ca      0x6c4 build/obj/rfhelp.o
- .debug_line    0x0000000000021b8e      0x6c1 build/obj/nrf_driver.o
- .debug_line    0x000000000002224f      0x903 build/obj/canard.o
- .debug_line    0x0000000000022b52      0x827 build/obj/canard_driver.o
- .debug_line    0x0000000000023379      0x18d build/obj/esc_Status.o
- .debug_line    0x0000000000023506      0x1a4 build/obj/esc_RawCommand.o
- .debug_line    0x00000000000236aa      0x1a4 build/obj/esc_RPMCommand.o
- .debug_line    0x000000000002384e      0x9f5 build/obj/mpu9150.o
- .debug_line    0x0000000000024243      0x771 build/obj/icm20948.o
- .debug_line    0x00000000000249b4      0x7b8 build/obj/ahrs.o
- .debug_line    0x000000000002516c      0x864 build/obj/imu.o
- .debug_line    0x00000000000259d0     0x14a2 build/obj/bmi160.o
- .debug_line    0x0000000000026e72      0x612 build/obj/bmi160_wrapper.o
- .debug_line    0x0000000000027484      0x758 build/obj/minilzo.o
- .debug_line    0x0000000000027bdc      0x7b6 build/obj/bm_if.o
- .debug_line    0x0000000000028392      0x62b build/obj/swdptap.o
- .debug_line    0x00000000000289bd      0x525 build/obj/timing.o
- .debug_line    0x0000000000028ee2      0x552 build/obj/platform.o
- .debug_line    0x0000000000029434      0x50f build/obj/exception.o
- .debug_line    0x0000000000029943      0xad7 build/obj/target.o
- .debug_line    0x000000000002a41a      0x6c0 build/obj/adiv5_swdp.o
- .debug_line    0x000000000002aada      0x9bf build/obj/adiv5.o
- .debug_line    0x000000000002b499      0xbd4 build/obj/cortexm.o
- .debug_line    0x000000000002c06d      0x77d build/obj/nrf51.o
- .debug_line    0x000000000002c7ea      0x796 build/obj/stm32f1.o
- .debug_line    0x000000000002cf80      0x965 build/obj/stm32f4.o
- .debug_line    0x000000000002d8e5      0x82d build/obj/stm32h7.o
- .debug_line    0x000000000002e112      0x963 build/obj/stm32l0.o
- .debug_line    0x000000000002ea75      0x7d7 build/obj/stm32l4.o
- .debug_line    0x000000000002f24c      0x553 build/obj/stm32f4xx_adc.o
- .debug_line    0x000000000002f79f      0x3c5 build/obj/stm32f4xx_dma.o
- .debug_line    0x000000000002fb64      0x21f build/obj/stm32f4xx_exti.o
- .debug_line    0x000000000002fd83      0x516 build/obj/stm32f4xx_flash.o
- .debug_line    0x0000000000030299      0x5d4 build/obj/stm32f4xx_rcc.o
- .debug_line    0x000000000003086d      0x209 build/obj/stm32f4xx_syscfg.o
- .debug_line    0x0000000000030a76      0xbc4 build/obj/stm32f4xx_tim.o
- .debug_line    0x000000000003163a      0x1af build/obj/stm32f4xx_iwdg.o
+ .debug_line    0x000000000001fe66      0x72e build/obj/app_spicontrol.o
+ .debug_line    0x0000000000020594      0x637 build/obj/spi_sw.o
+ .debug_line    0x0000000000020bcb      0x900 build/obj/rf.o
+ .debug_line    0x00000000000214cb      0x6c4 build/obj/rfhelp.o
+ .debug_line    0x0000000000021b8f      0x6c1 build/obj/nrf_driver.o
+ .debug_line    0x0000000000022250      0x903 build/obj/canard.o
+ .debug_line    0x0000000000022b53      0x827 build/obj/canard_driver.o
+ .debug_line    0x000000000002337a      0x18d build/obj/esc_Status.o
+ .debug_line    0x0000000000023507      0x1a4 build/obj/esc_RawCommand.o
+ .debug_line    0x00000000000236ab      0x1a4 build/obj/esc_RPMCommand.o
+ .debug_line    0x000000000002384f      0x9f5 build/obj/mpu9150.o
+ .debug_line    0x0000000000024244      0x771 build/obj/icm20948.o
+ .debug_line    0x00000000000249b5      0x7b8 build/obj/ahrs.o
+ .debug_line    0x000000000002516d      0x864 build/obj/imu.o
+ .debug_line    0x00000000000259d1     0x14a2 build/obj/bmi160.o
+ .debug_line    0x0000000000026e73      0x612 build/obj/bmi160_wrapper.o
+ .debug_line    0x0000000000027485      0x758 build/obj/minilzo.o
+ .debug_line    0x0000000000027bdd      0x7b6 build/obj/bm_if.o
+ .debug_line    0x0000000000028393      0x62b build/obj/swdptap.o
+ .debug_line    0x00000000000289be      0x525 build/obj/timing.o
+ .debug_line    0x0000000000028ee3      0x552 build/obj/platform.o
+ .debug_line    0x0000000000029435      0x50f build/obj/exception.o
+ .debug_line    0x0000000000029944      0xad7 build/obj/target.o
+ .debug_line    0x000000000002a41b      0x6c0 build/obj/adiv5_swdp.o
+ .debug_line    0x000000000002aadb      0x9bf build/obj/adiv5.o
+ .debug_line    0x000000000002b49a      0xbd4 build/obj/cortexm.o
+ .debug_line    0x000000000002c06e      0x77d build/obj/nrf51.o
+ .debug_line    0x000000000002c7eb      0x796 build/obj/stm32f1.o
+ .debug_line    0x000000000002cf81      0x965 build/obj/stm32f4.o
+ .debug_line    0x000000000002d8e6      0x82d build/obj/stm32h7.o
+ .debug_line    0x000000000002e113      0x963 build/obj/stm32l0.o
+ .debug_line    0x000000000002ea76      0x7d7 build/obj/stm32l4.o
+ .debug_line    0x000000000002f24d      0x553 build/obj/stm32f4xx_adc.o
+ .debug_line    0x000000000002f7a0      0x3c5 build/obj/stm32f4xx_dma.o
+ .debug_line    0x000000000002fb65      0x21f build/obj/stm32f4xx_exti.o
+ .debug_line    0x000000000002fd84      0x516 build/obj/stm32f4xx_flash.o
+ .debug_line    0x000000000003029a      0x5d4 build/obj/stm32f4xx_rcc.o
+ .debug_line    0x000000000003086e      0x209 build/obj/stm32f4xx_syscfg.o
+ .debug_line    0x0000000000030a77      0xbc4 build/obj/stm32f4xx_tim.o
+ .debug_line    0x000000000003163b      0x1af build/obj/stm32f4xx_iwdg.o
 
 .debug_str      0x0000000000000000    0x15e02
  .debug_str     0x0000000000000000      0x261 build/obj/crt1.o

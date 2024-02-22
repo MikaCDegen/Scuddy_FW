@@ -14,7 +14,7 @@ static THD_FUNCTION(example_thread, arg);
 static THD_WORKING_AREA(example_thread_wa, 2048); // 2kb Stack für den Thread
 
 // Einstellung der Samplerate in HZ
-#define SPICONTROL_SAMPLE_RATE_HZ 1000
+#define SPICONTROL_SAMPLE_RATE_HZ 200000
 
 uint32_t spi_val = 0;
 uint32_t testvalue = 0;
@@ -54,7 +54,7 @@ void app_spicontrol_init(void) {
 	TIM_Cmd(HW_ENC_TIM, ENABLE);
 
   // Setzt die Priorität des Interrupt Handlers und aktiviert ihn
-	nvicEnableVector(HW_ENC_TIM_ISR_CH, 1);
+	nvicEnableVector(HW_ENC_TIM_ISR_CH, 6);
 
 	// Start des Threads
 	chThdCreateStatic(example_thread_wa, sizeof(example_thread_wa),
