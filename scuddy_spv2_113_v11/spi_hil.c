@@ -18,7 +18,7 @@ void arraybau(void)
 {
 	float rpmf = mcpwm_foc_get_rpm();
 	float ampf = mcpwm_foc_get_tot_current_filtered();
-	//uint8_t data[8]; // volt high(1) -> volt low(3) - amp high(4) -> amp low(7)
+	//uint8_t data[8]; // volt high(0) -> volt low(3) - amp high(4) -> amp low(7)
 	uint32_t rpm = (int32_t)(rpmf * 1000.0) + 2000000; //2345
 	uint32_t amp = (int32_t)(ampf * 1000.0) + 2000000; //7892
 
