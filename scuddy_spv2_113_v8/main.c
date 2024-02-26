@@ -21,8 +21,6 @@
 #include "hal.h"
 #include "stm32f4xx_conf.h"
 
-#include "spi_hil.c"
-
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -184,48 +182,107 @@ void assert_failed(uint8_t* file, uint32_t line) {
 	}
 }
 
-uint8_t data[8];
 
-void arraybau(void)
+//SPI
+void SPI_Config (void)
 {
-	//uint8_t data[8]; // volt high(1) -> volt low(3) - amp high(4) -> amp low(7)
-	float voltf = 2.345;
-	float ampf = 7.892;
-	uint32_t volt = voltf * 1000.0; //2345
-	uint32_t amp = ampf * 1000.0; //7892
-
-	data[0] = (volt & 0xFF000000) >> 24;
-	data[1] = (volt & 0x00FF0000) >> 16;
-	data[2] = (volt & 0x0000FF00) >> 8;
-	data[3] = (volt & 0x000000FF);
-	// Für Matlab: volt = data[0] * 4278190080 + data[1] * 16711680 + data[2] * 65280 + data[3]
-
-	data[4] = (amp & 0xFF000000) >> 24;
-	data[5] = (amp & 0x00FF0000) >> 16;
-	data[6] = (amp & 0x0000FF00) >> 8;
-	data[7] = (amp & 0x000000FF);
+  RCC->APB2ENR |= (1<<12);  // Enable SPI1 CLock
+	
+  SPI1->CR1 |= (1<<0)|(1<<1);   // CPOL=1, CPHA=1
+	
+  SPI1->CR1 |= (1<<2);  // Master Mode
+	
+  SPI1->CR1 |= (3<<3);  // BR[2:0] = 011: fPCLK/16, PCLK2 = 80MHz, SPI clk = 5MHz
+	
+  SPI1->CR1 &= ~(1<<7);  // LSBFIRST = 0, MSB first
+	
+  SPI1->CR1 |= (1<<8) | (1<<9);  // SSM=1, SSi=1 -> Software Slave Management
+	
+  SPI1->CR1 &= ~(1<<10);  // RXONLY = 0, full-duplex
+	
+  SPI1->CR1 &= ~(1<<11);  // DFF=0, 8 bit data
+	
+  SPI1->CR2 = 0;
 }
+
+
+
+void GPIOConfig (void)
+{
+	RCC->AHB1ENR |= (1<<0);  // Enable GPIO Clock
+	
+	GPIOA->MODER |= (2<<10)|(2<<12)|(2<<14)|(2<<8);  // Alternate functions for PA5, PA6, PA7 and Output for PA9
+	
+	GPIOA->OSPEEDR |= (3<<10)|(3<<12)|(3<<14)|(3<<18);  // HIGH Speed for PA5, PA6, PA7, PA9
+	
+	GPIOA->AFRL |= (5 << (4 * 5)) | (5 << (4 * 6)) | (5 << (4 * 7));   // AF5(SPI1) for PA5, PA6, PA7
+}
+
+void SPI_Enable (void)
+{
+	SPI1->CR1 |= (1<<6);   // SPE=1, Peripheral enabled
+}
+
+void SPI_Disable (void)
+{
+	SPI1->CR1 &= ~(1<<6);   // SPE=0, Peripheral Disabled
+}
+
+void CS_Enable (void)
+{
+
+	palClearPad(GPIOA, 9); // Setzt Bit 25, um Pin 9 zurückzusetzen
+}
+
+void CS_Disable (void)
+{
+	palSetPad(GPIOA, 9);
+}
+
+void SPI_Transmit (uint8_t *data, int size)
+{
+	
+	/************** STEPS TO FOLLOW *****************
+	1. Wait for the TXE bit to set in the Status Register
+	2. Write the data to the Data Register
+	3. After the data has been transmitted, wait for the BSY bit to reset in Status Register
+	4. Clear the Overrun flag by reading DR and SR
+	************************************************/		
+	
+	int i=0;
+	while (i<size)
+	{
+	   while (!((SPI1->SR)&(1<<1))) {};  // wait for TXE bit to set -> This will indicate that the buffer is empty
+	   SPI1->DR = data[i];  // load the data into the Data Register
+	   i++;
+	}	
+	
+	
+/*During discontinuous communications, there is a 2 APB clock period delay between the
+write operation to the SPI_DR register and BSY bit setting. As a consequence it is
+mandatory to wait first until TXE is set and then until BSY is cleared after writing the last
+data.
+*/
+	while (!((SPI1->SR)&(1<<1))) {};  // wait for TXE bit to set -> This will indicate that the buffer is empty
+	while (((SPI1->SR)&(1<<7))) {};  // wait for BSY bit to Reset -> This will indicate that SPI is not busy in communication	
+	
+	//  Clear the Overrun flag by reading DR and SR
+	uint8_t temp = SPI1->DR;
+					temp = SPI1->SR;
+}
+	uint8_t data = 5;
+
 
 int main(void) {
 	halInit();
 	chSysInit();
 	GPIOConfig();
 	SPI_Config();
-	SPI_Enable();
-
-	arraybau();
 	
-	while(1)
-	{
-		
-		CS_Enable();
-		SPI_Transmit(data, 8);
-		CS_Disable();
-		for(int i = 0; i < 5000; i++)
-		{
-			asm("NOP");
-		}
-	}
+	SPI_Enable();
+	CS_Enable();
+	SPI_Transmit(data, 3);
+	CS_Disable();
 
 	// Initialize the enable pins here and disable them
 	// to avoid excessive current draw at boot because of
@@ -296,7 +353,7 @@ int main(void) {
 		nrf_driver_stop();
 		// Set the nrf SPI pins to the general SPI interface so that
 		// an external NRF can be used with the NRF app.
-		//spi_sw_change_pins(
+		spi_sw_change_pins(
 				HW_SPI_PORT_NSS, HW_SPI_PIN_NSS,
 				HW_SPI_PORT_SCK, HW_SPI_PIN_SCK,
 				HW_SPI_PORT_MOSI, HW_SPI_PIN_MOSI,
