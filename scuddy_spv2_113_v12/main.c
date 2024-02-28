@@ -195,7 +195,7 @@ int main(void) {
 	while (1)
 	{
 		senddata();
-		chThdSleepMilliseconds(1);
+		chThdSleepMilliseconds(10);
 	}
 	
 	// Initialize the enable pins here and disable them

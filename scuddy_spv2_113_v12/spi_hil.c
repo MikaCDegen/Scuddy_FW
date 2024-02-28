@@ -123,8 +123,7 @@ data.
 void senddata()
 {
 	arraybau();
-	CS_Enable();
-	
+	CS_Enable();	
 	SPI_Transmit(data, 9);
 	CS_Disable();
 }
