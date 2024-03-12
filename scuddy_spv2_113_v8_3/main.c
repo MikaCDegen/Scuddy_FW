@@ -270,8 +270,9 @@ data.
 	uint8_t temp = SPI1->DR;
 					temp = SPI1->SR;
 }
-	uint8_t data[8];
+	uint8_t data=12;
 
+/*
 void arraybau(void)
 {
 	float rpmf = mcpwm_foc_get_rpm();
@@ -293,18 +294,18 @@ void arraybau(void)
 
 	
 }
-
+*/
 int main(void) {
 	halInit();
 	chSysInit();
 	GPIOConfig();
 	SPI_Config();
 	SPI_Enable();
-	arraybau();
+	//arraybau();
 	while (1)
 	{
 		CS_Enable();
-		SPI_Transmit(data, 8);
+		SPI_Transmit(data, 1);
 		CS_Disable();
 		chThdSleepMilliseconds(1);
 	}

@@ -6695,7 +6695,7 @@ destructors     0x000000000800c000        0x0
  *(SORT_BY_NAME(.fini_array.*))
                 0x000000000800c000                PROVIDE (__fini_array_end = .)
 
-.text           0x000000000800c000     0x88d8
+.text           0x000000000800c000     0x8888
  *(.text)
  .text          0x000000000800c000      0x104 build/obj/crt0_v7m.o
                 0x000000000800c000                Reset_Handler
@@ -7313,562 +7313,558 @@ destructors     0x000000000800c000        0x0
                 0x000000000800f010       0x34 build/obj/main.o
                 0x000000000800f010                SPI_Transmit
  *fill*         0x000000000800f044        0xc 
- .text.arraybau
-                0x000000000800f050       0x4c build/obj/main.o
-                0x000000000800f050                arraybau
- *fill*         0x000000000800f09c        0x4 
  .text.startup.main
-                0x000000000800f0a0       0x6c build/obj/main.o
-                0x000000000800f0a0                main
- *fill*         0x000000000800f10c        0x4 
+                0x000000000800f050       0x6c build/obj/main.o
+                0x000000000800f050                main
+ *fill*         0x000000000800f0bc        0x4 
  .text.Vector88
-                0x000000000800f110       0x1c build/obj/irq_handlers.o
-                0x000000000800f110                Vector88
- *fill*         0x000000000800f12c        0x4 
+                0x000000000800f0c0       0x1c build/obj/irq_handlers.o
+                0x000000000800f0c0                Vector88
+ *fill*         0x000000000800f0dc        0x4 
  .text.Vector9C
-                0x000000000800f130       0x20 build/obj/irq_handlers.o
-                0x000000000800f130                Vector9C
+                0x000000000800f0e0       0x20 build/obj/irq_handlers.o
+                0x000000000800f0e0                Vector9C
  .text.VectorB4
-                0x000000000800f150       0x24 build/obj/irq_handlers.o
-                0x000000000800f150                VectorB4
- *fill*         0x000000000800f174        0xc 
+                0x000000000800f100       0x24 build/obj/irq_handlers.o
+                0x000000000800f100                VectorB4
+ *fill*         0x000000000800f124        0xc 
  .text.VectorF8
-                0x000000000800f180       0x24 build/obj/irq_handlers.o
-                0x000000000800f180                VectorF8
- *fill*         0x000000000800f1a4        0xc 
+                0x000000000800f130       0x24 build/obj/irq_handlers.o
+                0x000000000800f130                VectorF8
+ *fill*         0x000000000800f154        0xc 
  .text.Vector44
-                0x000000000800f1b0       0x28 build/obj/irq_handlers.o
-                0x000000000800f1b0                Vector44
- *fill*         0x000000000800f1d8        0x8 
+                0x000000000800f160       0x28 build/obj/irq_handlers.o
+                0x000000000800f160                Vector44
+ *fill*         0x000000000800f188        0x8 
  .text.filter_run_fir_iteration
-                0x000000000800f1e0       0x4c build/obj/digital_filter.o
-                0x000000000800f1e0                filter_run_fir_iteration
- *fill*         0x000000000800f22c        0x4 
+                0x000000000800f190       0x4c build/obj/digital_filter.o
+                0x000000000800f190                filter_run_fir_iteration
+ *fill*         0x000000000800f1dc        0x4 
  .text.filter_add_sample
-                0x000000000800f230       0x24 build/obj/digital_filter.o
-                0x000000000800f230                filter_add_sample
- *fill*         0x000000000800f254        0xc 
+                0x000000000800f1e0       0x24 build/obj/digital_filter.o
+                0x000000000800f1e0                filter_add_sample
+ *fill*         0x000000000800f204        0xc 
  .text.ledpwm_update_pwm
-                0x000000000800f260       0x40 build/obj/ledpwm.o
-                0x000000000800f260                ledpwm_update_pwm
+                0x000000000800f210       0x40 build/obj/ledpwm.o
+                0x000000000800f210                ledpwm_update_pwm
  .text.update_adc_sample_pos
-                0x000000000800f2a0      0x1dc build/obj/mcpwm.o
- *fill*         0x000000000800f47c        0x4 
+                0x000000000800f250      0x1dc build/obj/mcpwm.o
+ *fill*         0x000000000800f42c        0x4 
  .text.update_timer_attempt
-                0x000000000800f480       0x7c build/obj/mcpwm.o
- *fill*         0x000000000800f4fc        0x4 
+                0x000000000800f430       0x7c build/obj/mcpwm.o
+ *fill*         0x000000000800f4ac        0x4 
  .text.set_next_timer_settings
-                0x000000000800f500       0x2c build/obj/mcpwm.o
- *fill*         0x000000000800f52c        0x4 
+                0x000000000800f4b0       0x2c build/obj/mcpwm.o
+ *fill*         0x000000000800f4dc        0x4 
  .text.set_switching_frequency
-                0x000000000800f530       0x54 build/obj/mcpwm.o
- *fill*         0x000000000800f584        0xc 
+                0x000000000800f4e0       0x54 build/obj/mcpwm.o
+ *fill*         0x000000000800f534        0xc 
  .text.set_duty_cycle_hw
-                0x000000000800f590      0x118 build/obj/mcpwm.o
- *fill*         0x000000000800f6a8        0x8 
+                0x000000000800f540      0x118 build/obj/mcpwm.o
+ *fill*         0x000000000800f658        0x8 
  .text.set_next_comm_step
-                0x000000000800f6b0      0x460 build/obj/mcpwm.o
+                0x000000000800f660      0x460 build/obj/mcpwm.o
  .text.stop_pwm_hw
-                0x000000000800fb10       0x80 build/obj/mcpwm.o
+                0x000000000800fac0       0x80 build/obj/mcpwm.o
  .text.mcpwm_get_rpm.part.0
-                0x000000000800fb90       0x24 build/obj/mcpwm.o
- *fill*         0x000000000800fbb4        0xc 
+                0x000000000800fb40       0x24 build/obj/mcpwm.o
+ *fill*         0x000000000800fb64        0xc 
  .text.mcpwm_get_comm_step
-                0x000000000800fbc0        0xc build/obj/mcpwm.o
-                0x000000000800fbc0                mcpwm_get_comm_step
- *fill*         0x000000000800fbcc        0x4 
+                0x000000000800fb70        0xc build/obj/mcpwm.o
+                0x000000000800fb70                mcpwm_get_comm_step
+ *fill*         0x000000000800fb7c        0x4 
  .text.mcpwm_get_duty_cycle_now
-                0x000000000800fbd0        0xc build/obj/mcpwm.o
-                0x000000000800fbd0                mcpwm_get_duty_cycle_now
- *fill*         0x000000000800fbdc        0x4 
+                0x000000000800fb80        0xc build/obj/mcpwm.o
+                0x000000000800fb80                mcpwm_get_duty_cycle_now
+ *fill*         0x000000000800fb8c        0x4 
  .text.mcpwm_get_switching_frequency_now
-                0x000000000800fbe0        0xc build/obj/mcpwm.o
-                0x000000000800fbe0                mcpwm_get_switching_frequency_now
- *fill*         0x000000000800fbec        0x4 
+                0x000000000800fb90        0xc build/obj/mcpwm.o
+                0x000000000800fb90                mcpwm_get_switching_frequency_now
+ *fill*         0x000000000800fb9c        0x4 
  .text.mcpwm_get_rpm
-                0x000000000800fbf0       0x2c build/obj/mcpwm.o
-                0x000000000800fbf0                mcpwm_get_rpm
- *fill*         0x000000000800fc1c        0x4 
+                0x000000000800fba0       0x2c build/obj/mcpwm.o
+                0x000000000800fba0                mcpwm_get_rpm
+ *fill*         0x000000000800fbcc        0x4 
  .text.mcpwm_get_state
-                0x000000000800fc20        0xc build/obj/mcpwm.o
-                0x000000000800fc20                mcpwm_get_state
- *fill*         0x000000000800fc2c        0x4 
+                0x000000000800fbd0        0xc build/obj/mcpwm.o
+                0x000000000800fbd0                mcpwm_get_state
+ *fill*         0x000000000800fbdc        0x4 
  .text.mcpwm_get_tot_current
-                0x000000000800fc30        0xc build/obj/mcpwm.o
-                0x000000000800fc30                mcpwm_get_tot_current
- *fill*         0x000000000800fc3c        0x4 
+                0x000000000800fbe0        0xc build/obj/mcpwm.o
+                0x000000000800fbe0                mcpwm_get_tot_current
+ *fill*         0x000000000800fbec        0x4 
  .text.mcpwm_get_tot_current_filtered
-                0x000000000800fc40        0xc build/obj/mcpwm.o
-                0x000000000800fc40                mcpwm_get_tot_current_filtered
- *fill*         0x000000000800fc4c        0x4 
+                0x000000000800fbf0        0xc build/obj/mcpwm.o
+                0x000000000800fbf0                mcpwm_get_tot_current_filtered
+ *fill*         0x000000000800fbfc        0x4 
  .text.mcpwm_get_tot_current_in_filtered
-                0x000000000800fc50       0x20 build/obj/mcpwm.o
-                0x000000000800fc50                mcpwm_get_tot_current_in_filtered
+                0x000000000800fc00       0x20 build/obj/mcpwm.o
+                0x000000000800fc00                mcpwm_get_tot_current_in_filtered
  .text.mcpwm_get_tachometer_value
-                0x000000000800fc70       0x14 build/obj/mcpwm.o
-                0x000000000800fc70                mcpwm_get_tachometer_value
- *fill*         0x000000000800fc84        0xc 
+                0x000000000800fc20       0x14 build/obj/mcpwm.o
+                0x000000000800fc20                mcpwm_get_tachometer_value
+ *fill*         0x000000000800fc34        0xc 
  .text.mcpwm_stop_pwm
-                0x000000000800fc90       0x28 build/obj/mcpwm.o
-                0x000000000800fc90                mcpwm_stop_pwm
- *fill*         0x000000000800fcb8        0x8 
+                0x000000000800fc40       0x28 build/obj/mcpwm.o
+                0x000000000800fc40                mcpwm_stop_pwm
+ *fill*         0x000000000800fc68        0x8 
  .text.mcpwm_adc_inj_int_handler
-                0x000000000800fcc0      0x468 build/obj/mcpwm.o
-                0x000000000800fcc0                mcpwm_adc_inj_int_handler
- *fill*         0x0000000008010128        0x8 
+                0x000000000800fc70      0x468 build/obj/mcpwm.o
+                0x000000000800fc70                mcpwm_adc_inj_int_handler
+ *fill*         0x00000000080100d8        0x8 
  .text.mcpwm_get_last_inj_adc_isr_duration
-                0x0000000008010130        0xc build/obj/mcpwm.o
-                0x0000000008010130                mcpwm_get_last_inj_adc_isr_duration
- *fill*         0x000000000801013c        0x4 
+                0x00000000080100e0        0xc build/obj/mcpwm.o
+                0x00000000080100e0                mcpwm_get_last_inj_adc_isr_duration
+ *fill*         0x00000000080100ec        0x4 
  .text.mcpwm_is_dccal_done
-                0x0000000008010140        0xc build/obj/mcpwm.o
-                0x0000000008010140                mcpwm_is_dccal_done
- *fill*         0x000000000801014c        0x4 
+                0x00000000080100f0        0xc build/obj/mcpwm.o
+                0x00000000080100f0                mcpwm_is_dccal_done
+ *fill*         0x00000000080100fc        0x4 
  .text.mcpwm_read_hall_phase
-                0x0000000008010150       0x38 build/obj/mcpwm.o
-                0x0000000008010150                mcpwm_read_hall_phase
- *fill*         0x0000000008010188        0x8 
+                0x0000000008010100       0x38 build/obj/mcpwm.o
+                0x0000000008010100                mcpwm_read_hall_phase
+ *fill*         0x0000000008010138        0x8 
  .text.utils_norm_angle
-                0x0000000008010190       0x34 build/obj/utils.o
-                0x0000000008010190                utils_norm_angle
- *fill*         0x00000000080101c4        0xc 
+                0x0000000008010140       0x34 build/obj/utils.o
+                0x0000000008010140                utils_norm_angle
+ *fill*         0x0000000008010174        0xc 
  .text.utils_norm_angle_rad
-                0x00000000080101d0       0x5c build/obj/utils.o
-                0x00000000080101d0                utils_norm_angle_rad
- *fill*         0x000000000801022c        0x4 
+                0x0000000008010180       0x5c build/obj/utils.o
+                0x0000000008010180                utils_norm_angle_rad
+ *fill*         0x00000000080101dc        0x4 
  .text.utils_truncate_number
-                0x0000000008010230       0x2c build/obj/utils.o
-                0x0000000008010230                utils_truncate_number
- *fill*         0x000000000801025c        0x4 
+                0x00000000080101e0       0x2c build/obj/utils.o
+                0x00000000080101e0                utils_truncate_number
+ *fill*         0x000000000801020c        0x4 
  .text.utils_truncate_number_int
-                0x0000000008010260       0x18 build/obj/utils.o
-                0x0000000008010260                utils_truncate_number_int
- *fill*         0x0000000008010278        0x8 
+                0x0000000008010210       0x18 build/obj/utils.o
+                0x0000000008010210                utils_truncate_number_int
+ *fill*         0x0000000008010228        0x8 
  .text.utils_truncate_number_abs
-                0x0000000008010280       0x28 build/obj/utils.o
-                0x0000000008010280                utils_truncate_number_abs
- *fill*         0x00000000080102a8        0x8 
+                0x0000000008010230       0x28 build/obj/utils.o
+                0x0000000008010230                utils_truncate_number_abs
+ *fill*         0x0000000008010258        0x8 
  .text.utils_map
-                0x00000000080102b0       0x1c build/obj/utils.o
-                0x00000000080102b0                utils_map
- *fill*         0x00000000080102cc        0x4 
+                0x0000000008010260       0x1c build/obj/utils.o
+                0x0000000008010260                utils_map
+ *fill*         0x000000000801027c        0x4 
  .text.utils_angle_difference
-                0x00000000080102d0       0x54 build/obj/utils.o
-                0x00000000080102d0                utils_angle_difference
- *fill*         0x0000000008010324        0xc 
+                0x0000000008010280       0x54 build/obj/utils.o
+                0x0000000008010280                utils_angle_difference
+ *fill*         0x00000000080102d4        0xc 
  .text.utils_angle_difference_rad
-                0x0000000008010330       0x54 build/obj/utils.o
-                0x0000000008010330                utils_angle_difference_rad
- *fill*         0x0000000008010384        0xc 
+                0x00000000080102e0       0x54 build/obj/utils.o
+                0x00000000080102e0                utils_angle_difference_rad
+ *fill*         0x0000000008010334        0xc 
  .text.utils_middle_of_3_int
-                0x0000000008010390       0x34 build/obj/utils.o
-                0x0000000008010390                utils_middle_of_3_int
- *fill*         0x00000000080103c4        0xc 
+                0x0000000008010340       0x34 build/obj/utils.o
+                0x0000000008010340                utils_middle_of_3_int
+ *fill*         0x0000000008010374        0xc 
  .text.utils_fast_atan2
-                0x00000000080103d0       0x7c build/obj/utils.o
-                0x00000000080103d0                utils_fast_atan2
- *fill*         0x000000000801044c        0x4 
+                0x0000000008010380       0x7c build/obj/utils.o
+                0x0000000008010380                utils_fast_atan2
+ *fill*         0x00000000080103fc        0x4 
  .text.utils_saturate_vector_2d
-                0x0000000008010450       0x90 build/obj/utils.o
-                0x0000000008010450                utils_saturate_vector_2d
+                0x0000000008010400       0x90 build/obj/utils.o
+                0x0000000008010400                utils_saturate_vector_2d
  .text.utils_fast_sincos_better
-                0x00000000080104e0      0x114 build/obj/utils.o
-                0x00000000080104e0                utils_fast_sincos_better
- *fill*         0x00000000080105f4        0xc 
+                0x0000000008010490      0x114 build/obj/utils.o
+                0x0000000008010490                utils_fast_sincos_better
+ *fill*         0x00000000080105a4        0xc 
  .text.utils_max_abs
-                0x0000000008010600       0x18 build/obj/utils.o
-                0x0000000008010600                utils_max_abs
- *fill*         0x0000000008010618        0x8 
+                0x00000000080105b0       0x18 build/obj/utils.o
+                0x00000000080105b0                utils_max_abs
+ *fill*         0x00000000080105c8        0x8 
  .text.utils_sys_lock_cnt
-                0x0000000008010620       0x14 build/obj/utils.o
-                0x0000000008010620                utils_sys_lock_cnt
- *fill*         0x0000000008010634        0xc 
+                0x00000000080105d0       0x14 build/obj/utils.o
+                0x00000000080105d0                utils_sys_lock_cnt
+ *fill*         0x00000000080105e4        0xc 
  .text.utils_sys_unlock_cnt
-                0x0000000008010640       0x18 build/obj/utils.o
-                0x0000000008010640                utils_sys_unlock_cnt
- *fill*         0x0000000008010658        0x8 
+                0x00000000080105f0       0x18 build/obj/utils.o
+                0x00000000080105f0                utils_sys_unlock_cnt
+ *fill*         0x0000000008010608        0x8 
  .text.terminal_add_fault_data
-                0x0000000008010660       0x30 build/obj/terminal.o
-                0x0000000008010660                terminal_add_fault_data
+                0x0000000008010610       0x30 build/obj/terminal.o
+                0x0000000008010610                terminal_add_fault_data
  .text.timeout_feed_WDT
-                0x0000000008010690       0x14 build/obj/timeout.o
-                0x0000000008010690                timeout_feed_WDT
- *fill*         0x00000000080106a4        0xc 
+                0x0000000008010640       0x14 build/obj/timeout.o
+                0x0000000008010640                timeout_feed_WDT
+ *fill*         0x0000000008010654        0xc 
  .text.encoder_is_configured
-                0x00000000080106b0       0x10 build/obj/encoder.o
-                0x00000000080106b0                encoder_is_configured
+                0x0000000008010660       0x10 build/obj/encoder.o
+                0x0000000008010660                encoder_is_configured
  .text.encoder_read_deg
-                0x00000000080106c0       0x6c build/obj/encoder.o
-                0x00000000080106c0                encoder_read_deg
- *fill*         0x000000000801072c        0x4 
+                0x0000000008010670       0x6c build/obj/encoder.o
+                0x0000000008010670                encoder_read_deg
+ *fill*         0x00000000080106dc        0x4 
  .text.encoder_reset
-                0x0000000008010730       0x74 build/obj/encoder.o
-                0x0000000008010730                encoder_reset
- *fill*         0x00000000080107a4        0xc 
+                0x00000000080106e0       0x74 build/obj/encoder.o
+                0x00000000080106e0                encoder_reset
+ *fill*         0x0000000008010754        0xc 
  .text.encoder_tim_isr
-                0x00000000080107b0      0x10c build/obj/encoder.o
-                0x00000000080107b0                encoder_tim_isr
- *fill*         0x00000000080108bc        0x4 
+                0x0000000008010760      0x10c build/obj/encoder.o
+                0x0000000008010760                encoder_tim_isr
+ *fill*         0x000000000801086c        0x4 
  .text.encoder_index_found
-                0x00000000080108c0        0xc build/obj/encoder.o
-                0x00000000080108c0                encoder_index_found
- *fill*         0x00000000080108cc        0x4 
+                0x0000000008010870        0xc build/obj/encoder.o
+                0x0000000008010870                encoder_index_found
+ *fill*         0x000000000801087c        0x4 
  .text.spi_transfer.isra.0.constprop.1
-                0x00000000080108d0       0x6c build/obj/encoder.o
- *fill*         0x000000000801093c        0x4 
+                0x0000000008010880       0x6c build/obj/encoder.o
+ *fill*         0x00000000080108ec        0x4 
  .text.mc_interface_dccal_done
-                0x0000000008010940       0x24 build/obj/mc_interface.o
-                0x0000000008010940                mc_interface_dccal_done
- *fill*         0x0000000008010964        0xc 
+                0x00000000080108f0       0x24 build/obj/mc_interface.o
+                0x00000000080108f0                mc_interface_dccal_done
+ *fill*         0x0000000008010914        0xc 
  .text.mc_interface_get_fault
-                0x0000000008010970        0xc build/obj/mc_interface.o
-                0x0000000008010970                mc_interface_get_fault
- *fill*         0x000000000801097c        0x4 
+                0x0000000008010920        0xc build/obj/mc_interface.o
+                0x0000000008010920                mc_interface_get_fault
+ *fill*         0x000000000801092c        0x4 
  .text.mc_interface_get_state
-                0x0000000008010980       0x20 build/obj/mc_interface.o
-                0x0000000008010980                mc_interface_get_state
+                0x0000000008010930       0x20 build/obj/mc_interface.o
+                0x0000000008010930                mc_interface_get_state
  .text.mc_interface_get_enviro
-                0x00000000080109a0        0xc build/obj/mc_interface.o
-                0x00000000080109a0                mc_interface_get_enviro
- *fill*         0x00000000080109ac        0x4 
+                0x0000000008010950        0xc build/obj/mc_interface.o
+                0x0000000008010950                mc_interface_get_enviro
+ *fill*         0x000000000801095c        0x4 
  .text.mc_interface_get_duty_cycle_now
-                0x00000000080109b0       0x38 build/obj/mc_interface.o
-                0x00000000080109b0                mc_interface_get_duty_cycle_now
- *fill*         0x00000000080109e8        0x8 
+                0x0000000008010960       0x38 build/obj/mc_interface.o
+                0x0000000008010960                mc_interface_get_duty_cycle_now
+ *fill*         0x0000000008010998        0x8 
  .text.mc_interface_get_sampling_frequency_now
-                0x00000000080109f0       0x2c build/obj/mc_interface.o
-                0x00000000080109f0                mc_interface_get_sampling_frequency_now
- *fill*         0x0000000008010a1c        0x4 
+                0x00000000080109a0       0x2c build/obj/mc_interface.o
+                0x00000000080109a0                mc_interface_get_sampling_frequency_now
+ *fill*         0x00000000080109cc        0x4 
  .text.mc_interface_get_rpm
-                0x0000000008010a20       0x38 build/obj/mc_interface.o
-                0x0000000008010a20                mc_interface_get_rpm
- *fill*         0x0000000008010a58        0x8 
+                0x00000000080109d0       0x38 build/obj/mc_interface.o
+                0x00000000080109d0                mc_interface_get_rpm
+ *fill*         0x0000000008010a08        0x8 
  .text.mc_interface_get_tot_current
-                0x0000000008010a60       0x24 build/obj/mc_interface.o
-                0x0000000008010a60                mc_interface_get_tot_current
- *fill*         0x0000000008010a84        0xc 
+                0x0000000008010a10       0x24 build/obj/mc_interface.o
+                0x0000000008010a10                mc_interface_get_tot_current
+ *fill*         0x0000000008010a34        0xc 
  .text.mc_interface_get_tot_current_filtered
-                0x0000000008010a90       0x24 build/obj/mc_interface.o
-                0x0000000008010a90                mc_interface_get_tot_current_filtered
- *fill*         0x0000000008010ab4        0xc 
+                0x0000000008010a40       0x24 build/obj/mc_interface.o
+                0x0000000008010a40                mc_interface_get_tot_current_filtered
+ *fill*         0x0000000008010a64        0xc 
  .text.mc_interface_get_tot_current_in_filtered
-                0x0000000008010ac0       0x40 build/obj/mc_interface.o
-                0x0000000008010ac0                mc_interface_get_tot_current_in_filtered
+                0x0000000008010a70       0x40 build/obj/mc_interface.o
+                0x0000000008010a70                mc_interface_get_tot_current_in_filtered
  .text.mc_interface_get_tachometer_value
-                0x0000000008010b00       0x4c build/obj/mc_interface.o
-                0x0000000008010b00                mc_interface_get_tachometer_value
- *fill*         0x0000000008010b4c        0x4 
+                0x0000000008010ab0       0x4c build/obj/mc_interface.o
+                0x0000000008010ab0                mc_interface_get_tachometer_value
+ *fill*         0x0000000008010afc        0x4 
  .text.mc_interface_fault_stop.part.5
-                0x0000000008010b50      0x1a4 build/obj/mc_interface.o
- *fill*         0x0000000008010cf4        0xc 
+                0x0000000008010b00      0x1a4 build/obj/mc_interface.o
+ *fill*         0x0000000008010ca4        0xc 
  .text.mc_interface_get_last_inj_adc_isr_duration
-                0x0000000008010d00       0x2c build/obj/mc_interface.o
-                0x0000000008010d00                mc_interface_get_last_inj_adc_isr_duration
- *fill*         0x0000000008010d2c        0x4 
+                0x0000000008010cb0       0x2c build/obj/mc_interface.o
+                0x0000000008010cb0                mc_interface_get_last_inj_adc_isr_duration
+ *fill*         0x0000000008010cdc        0x4 
  .text.mc_interface_temp_motor_filtered
-                0x0000000008010d30        0xc build/obj/mc_interface.o
-                0x0000000008010d30                mc_interface_temp_motor_filtered
- *fill*         0x0000000008010d3c        0x4 
+                0x0000000008010ce0        0xc build/obj/mc_interface.o
+                0x0000000008010ce0                mc_interface_temp_motor_filtered
+ *fill*         0x0000000008010cec        0x4 
  .text.mc_interface_fault_stop
-                0x0000000008010d40       0x24 build/obj/mc_interface.o
-                0x0000000008010d40                mc_interface_fault_stop
- *fill*         0x0000000008010d64        0xc 
+                0x0000000008010cf0       0x24 build/obj/mc_interface.o
+                0x0000000008010cf0                mc_interface_fault_stop
+ *fill*         0x0000000008010d14        0xc 
  .text.mc_interface_mc_timer_isr
-                0x0000000008010d70      0x9fc build/obj/mc_interface.o
-                0x0000000008010d70                mc_interface_mc_timer_isr
- *fill*         0x000000000801176c        0x4 
+                0x0000000008010d20      0x9fc build/obj/mc_interface.o
+                0x0000000008010d20                mc_interface_mc_timer_isr
+ *fill*         0x000000000801171c        0x4 
  .text.mc_interface_adc_inj_int_handler
-                0x0000000008011770       0x14 build/obj/mc_interface.o
-                0x0000000008011770                mc_interface_adc_inj_int_handler
- *fill*         0x0000000008011784        0xc 
+                0x0000000008011720       0x14 build/obj/mc_interface.o
+                0x0000000008011720                mc_interface_adc_inj_int_handler
+ *fill*         0x0000000008011734        0xc 
  .text.correct_encoder
-                0x0000000008011790       0x74 build/obj/mcpwm_foc.o
- *fill*         0x0000000008011804        0xc 
+                0x0000000008011740       0x74 build/obj/mcpwm_foc.o
+ *fill*         0x00000000080117b4        0xc 
  .text.start_pwm_hw
-                0x0000000008011810       0x70 build/obj/mcpwm_foc.o
+                0x00000000080117c0       0x70 build/obj/mcpwm_foc.o
  .text.stop_pwm_hw
-                0x0000000008011880       0x78 build/obj/mcpwm_foc.o
- *fill*         0x00000000080118f8        0x8 
+                0x0000000008011830       0x78 build/obj/mcpwm_foc.o
+ *fill*         0x00000000080118a8        0x8 
  .text.read_hall
-                0x0000000008011900       0x64 build/obj/mcpwm_foc.o
- *fill*         0x0000000008011964        0xc 
+                0x00000000080118b0       0x64 build/obj/mcpwm_foc.o
+ *fill*         0x0000000008011914        0xc 
  .text.correct_hall
-                0x0000000008011970      0x1f0 build/obj/mcpwm_foc.o
+                0x0000000008011920      0x1f0 build/obj/mcpwm_foc.o
  .text.mcpwm_foc_get_state
-                0x0000000008011b60        0xc build/obj/mcpwm_foc.o
-                0x0000000008011b60                mcpwm_foc_get_state
- *fill*         0x0000000008011b6c        0x4 
+                0x0000000008011b10        0xc build/obj/mcpwm_foc.o
+                0x0000000008011b10                mcpwm_foc_get_state
+ *fill*         0x0000000008011b1c        0x4 
  .text.mcpwm_foc_is_dccal_done
-                0x0000000008011b70        0xc build/obj/mcpwm_foc.o
-                0x0000000008011b70                mcpwm_foc_is_dccal_done
- *fill*         0x0000000008011b7c        0x4 
+                0x0000000008011b20        0xc build/obj/mcpwm_foc.o
+                0x0000000008011b20                mcpwm_foc_is_dccal_done
+ *fill*         0x0000000008011b2c        0x4 
  .text.mcpwm_foc_set_current
-                0x0000000008011b80       0xa0 build/obj/mcpwm_foc.o
-                0x0000000008011b80                mcpwm_foc_set_current
+                0x0000000008011b30       0xa0 build/obj/mcpwm_foc.o
+                0x0000000008011b30                mcpwm_foc_set_current
  .text.mcpwm_foc_stop_pwm
-                0x0000000008011c20        0xc build/obj/mcpwm_foc.o
-                0x0000000008011c20                mcpwm_foc_stop_pwm
- *fill*         0x0000000008011c2c        0x4 
+                0x0000000008011bd0        0xc build/obj/mcpwm_foc.o
+                0x0000000008011bd0                mcpwm_foc_stop_pwm
+ *fill*         0x0000000008011bdc        0x4 
  .text.mcpwm_foc_get_duty_cycle_now
-                0x0000000008011c30        0xc build/obj/mcpwm_foc.o
-                0x0000000008011c30                mcpwm_foc_get_duty_cycle_now
- *fill*         0x0000000008011c3c        0x4 
+                0x0000000008011be0        0xc build/obj/mcpwm_foc.o
+                0x0000000008011be0                mcpwm_foc_get_duty_cycle_now
+ *fill*         0x0000000008011bec        0x4 
  .text.mcpwm_foc_get_sampling_frequency_now
-                0x0000000008011c40       0x18 build/obj/mcpwm_foc.o
-                0x0000000008011c40                mcpwm_foc_get_sampling_frequency_now
- *fill*         0x0000000008011c58        0x8 
+                0x0000000008011bf0       0x18 build/obj/mcpwm_foc.o
+                0x0000000008011bf0                mcpwm_foc_get_sampling_frequency_now
+ *fill*         0x0000000008011c08        0x8 
  .text.mcpwm_foc_get_rpm
-                0x0000000008011c60       0x18 build/obj/mcpwm_foc.o
-                0x0000000008011c60                mcpwm_foc_get_rpm
- *fill*         0x0000000008011c78        0x8 
+                0x0000000008011c10       0x18 build/obj/mcpwm_foc.o
+                0x0000000008011c10                mcpwm_foc_get_rpm
+ *fill*         0x0000000008011c28        0x8 
  .text.mcpwm_foc_get_tot_current
-                0x0000000008011c80       0x2c build/obj/mcpwm_foc.o
-                0x0000000008011c80                mcpwm_foc_get_tot_current
- *fill*         0x0000000008011cac        0x4 
+                0x0000000008011c30       0x2c build/obj/mcpwm_foc.o
+                0x0000000008011c30                mcpwm_foc_get_tot_current
+ *fill*         0x0000000008011c5c        0x4 
  .text.mcpwm_foc_get_tot_current_filtered
-                0x0000000008011cb0       0x2c build/obj/mcpwm_foc.o
-                0x0000000008011cb0                mcpwm_foc_get_tot_current_filtered
- *fill*         0x0000000008011cdc        0x4 
+                0x0000000008011c60       0x2c build/obj/mcpwm_foc.o
+                0x0000000008011c60                mcpwm_foc_get_tot_current_filtered
+ *fill*         0x0000000008011c8c        0x4 
  .text.mcpwm_foc_get_abs_motor_current
-                0x0000000008011ce0        0xc build/obj/mcpwm_foc.o
-                0x0000000008011ce0                mcpwm_foc_get_abs_motor_current
- *fill*         0x0000000008011cec        0x4 
+                0x0000000008011c90        0xc build/obj/mcpwm_foc.o
+                0x0000000008011c90                mcpwm_foc_get_abs_motor_current
+ *fill*         0x0000000008011c9c        0x4 
  .text.mcpwm_foc_get_abs_motor_current_unbalance
-                0x0000000008011cf0       0x1c build/obj/mcpwm_foc.o
-                0x0000000008011cf0                mcpwm_foc_get_abs_motor_current_unbalance
- *fill*         0x0000000008011d0c        0x4 
+                0x0000000008011ca0       0x1c build/obj/mcpwm_foc.o
+                0x0000000008011ca0                mcpwm_foc_get_abs_motor_current_unbalance
+ *fill*         0x0000000008011cbc        0x4 
  .text.mcpwm_foc_get_abs_motor_current_filtered
-                0x0000000008011d10        0xc build/obj/mcpwm_foc.o
-                0x0000000008011d10                mcpwm_foc_get_abs_motor_current_filtered
- *fill*         0x0000000008011d1c        0x4 
+                0x0000000008011cc0        0xc build/obj/mcpwm_foc.o
+                0x0000000008011cc0                mcpwm_foc_get_abs_motor_current_filtered
+ *fill*         0x0000000008011ccc        0x4 
  .text.mcpwm_foc_get_id
-                0x0000000008011d20        0xc build/obj/mcpwm_foc.o
-                0x0000000008011d20                mcpwm_foc_get_id
- *fill*         0x0000000008011d2c        0x4 
+                0x0000000008011cd0        0xc build/obj/mcpwm_foc.o
+                0x0000000008011cd0                mcpwm_foc_get_id
+ *fill*         0x0000000008011cdc        0x4 
  .text.mcpwm_foc_get_iq
-                0x0000000008011d30        0xc build/obj/mcpwm_foc.o
-                0x0000000008011d30                mcpwm_foc_get_iq
- *fill*         0x0000000008011d3c        0x4 
+                0x0000000008011ce0        0xc build/obj/mcpwm_foc.o
+                0x0000000008011ce0                mcpwm_foc_get_iq
+ *fill*         0x0000000008011cec        0x4 
  .text.mcpwm_foc_get_tot_current_in_filtered
-                0x0000000008011d40        0xc build/obj/mcpwm_foc.o
-                0x0000000008011d40                mcpwm_foc_get_tot_current_in_filtered
- *fill*         0x0000000008011d4c        0x4 
+                0x0000000008011cf0        0xc build/obj/mcpwm_foc.o
+                0x0000000008011cf0                mcpwm_foc_get_tot_current_in_filtered
+ *fill*         0x0000000008011cfc        0x4 
  .text.mcpwm_foc_get_tachometer_value
-                0x0000000008011d50       0x14 build/obj/mcpwm_foc.o
-                0x0000000008011d50                mcpwm_foc_get_tachometer_value
- *fill*         0x0000000008011d64        0xc 
+                0x0000000008011d00       0x14 build/obj/mcpwm_foc.o
+                0x0000000008011d00                mcpwm_foc_get_tachometer_value
+ *fill*         0x0000000008011d14        0xc 
  .text.mcpwm_foc_get_phase
-                0x0000000008011d70       0x30 build/obj/mcpwm_foc.o
-                0x0000000008011d70                mcpwm_foc_get_phase
+                0x0000000008011d20       0x30 build/obj/mcpwm_foc.o
+                0x0000000008011d20                mcpwm_foc_get_phase
  .text.mcpwm_foc_get_vd
-                0x0000000008011da0        0xc build/obj/mcpwm_foc.o
-                0x0000000008011da0                mcpwm_foc_get_vd
- *fill*         0x0000000008011dac        0x4 
+                0x0000000008011d50        0xc build/obj/mcpwm_foc.o
+                0x0000000008011d50                mcpwm_foc_get_vd
+ *fill*         0x0000000008011d5c        0x4 
  .text.mcpwm_foc_get_vq
-                0x0000000008011db0        0xc build/obj/mcpwm_foc.o
-                0x0000000008011db0                mcpwm_foc_get_vq
- *fill*         0x0000000008011dbc        0x4 
+                0x0000000008011d60        0xc build/obj/mcpwm_foc.o
+                0x0000000008011d60                mcpwm_foc_get_vq
+ *fill*         0x0000000008011d6c        0x4 
  .text.mcpwm_foc_get_last_adc_isr_duration
-                0x0000000008011dc0        0xc build/obj/mcpwm_foc.o
-                0x0000000008011dc0                mcpwm_foc_get_last_adc_isr_duration
- *fill*         0x0000000008011dcc        0x4 
+                0x0000000008011d70        0xc build/obj/mcpwm_foc.o
+                0x0000000008011d70                mcpwm_foc_get_last_adc_isr_duration
+ *fill*         0x0000000008011d7c        0x4 
  .text.mcpwm_foc_tim_sample_int_handler
-                0x0000000008011dd0       0x30 build/obj/mcpwm_foc.o
-                0x0000000008011dd0                mcpwm_foc_tim_sample_int_handler
+                0x0000000008011d80       0x30 build/obj/mcpwm_foc.o
+                0x0000000008011d80                mcpwm_foc_tim_sample_int_handler
  .text.observer_update
-                0x0000000008011e00      0x1e8 build/obj/mcpwm_foc.o
-                0x0000000008011e00                observer_update
- *fill*         0x0000000008011fe8        0x8 
+                0x0000000008011db0      0x1e8 build/obj/mcpwm_foc.o
+                0x0000000008011db0                observer_update
+ *fill*         0x0000000008011f98        0x8 
  .text.mcpwm_foc_adc_int_handler
-                0x0000000008011ff0     0x1858 build/obj/mcpwm_foc.o
-                0x0000000008011ff0                mcpwm_foc_adc_int_handler
- *fill*         0x0000000008013848        0x8 
+                0x0000000008011fa0     0x1858 build/obj/mcpwm_foc.o
+                0x0000000008011fa0                mcpwm_foc_adc_int_handler
+ *fill*         0x00000000080137f8        0x8 
  .text.stop_pwm_hw
-                0x0000000008013850       0x6c build/obj/gpdrive.o
- *fill*         0x00000000080138bc        0x4 
+                0x0000000008013800       0x6c build/obj/gpdrive.o
+ *fill*         0x000000000801386c        0x4 
  .text.gpdrive_is_dccal_done
-                0x00000000080138c0        0xc build/obj/gpdrive.o
-                0x00000000080138c0                gpdrive_is_dccal_done
- *fill*         0x00000000080138cc        0x4 
+                0x0000000008013870        0xc build/obj/gpdrive.o
+                0x0000000008013870                gpdrive_is_dccal_done
+ *fill*         0x000000000801387c        0x4 
  .text.gpdrive_get_switching_frequency_now
-                0x00000000080138d0        0xc build/obj/gpdrive.o
-                0x00000000080138d0                gpdrive_get_switching_frequency_now
- *fill*         0x00000000080138dc        0x4 
+                0x0000000008013880        0xc build/obj/gpdrive.o
+                0x0000000008013880                gpdrive_get_switching_frequency_now
+ *fill*         0x000000000801388c        0x4 
  .text.gpdrive_set_mode
-                0x00000000080138e0       0x14 build/obj/gpdrive.o
-                0x00000000080138e0                gpdrive_set_mode
- *fill*         0x00000000080138f4        0xc 
+                0x0000000008013890       0x14 build/obj/gpdrive.o
+                0x0000000008013890                gpdrive_set_mode
+ *fill*         0x00000000080138a4        0xc 
  .text.gpdrive_get_last_adc_isr_duration
-                0x0000000008013900        0xc build/obj/gpdrive.o
-                0x0000000008013900                gpdrive_get_last_adc_isr_duration
- *fill*         0x000000000801390c        0x4 
+                0x00000000080138b0        0xc build/obj/gpdrive.o
+                0x00000000080138b0                gpdrive_get_last_adc_isr_duration
+ *fill*         0x00000000080138bc        0x4 
  .text.timer_time_now
-                0x0000000008013910        0xc build/obj/timer.o
-                0x0000000008013910                timer_time_now
- *fill*         0x000000000801391c        0x4 
+                0x00000000080138c0        0xc build/obj/timer.o
+                0x00000000080138c0                timer_time_now
+ *fill*         0x00000000080138cc        0x4 
  .text.timer_seconds_elapsed_since
-                0x0000000008013920       0x20 build/obj/timer.o
-                0x0000000008013920                timer_seconds_elapsed_since
+                0x00000000080138d0       0x20 build/obj/timer.o
+                0x00000000080138d0                timer_seconds_elapsed_since
  .text.virtual_motor_int_handler
-                0x0000000008013940      0x384 build/obj/virtual_motor.o
-                0x0000000008013940                virtual_motor_int_handler
- *fill*         0x0000000008013cc4        0xc 
+                0x00000000080138f0      0x384 build/obj/virtual_motor.o
+                0x00000000080138f0                virtual_motor_int_handler
+ *fill*         0x0000000008013c74        0xc 
  .text.virtual_motor_is_connected
-                0x0000000008013cd0        0xc build/obj/virtual_motor.o
-                0x0000000008013cd0                virtual_motor_is_connected
- *fill*         0x0000000008013cdc        0x4 
+                0x0000000008013c80        0xc build/obj/virtual_motor.o
+                0x0000000008013c80                virtual_motor_is_connected
+ *fill*         0x0000000008013c8c        0x4 
  .text.virtual_motor_get_angle_deg
-                0x0000000008013ce0       0x24 build/obj/virtual_motor.o
-                0x0000000008013ce0                virtual_motor_get_angle_deg
- *fill*         0x0000000008013d04        0xc 
+                0x0000000008013c90       0x24 build/obj/virtual_motor.o
+                0x0000000008013c90                virtual_motor_get_angle_deg
+ *fill*         0x0000000008013cb4        0xc 
  .text.spi_exchange
-                0x0000000008013d10       0xec build/obj/drv8350.o
- *fill*         0x0000000008013dfc        0x4 
+                0x0000000008013cc0       0xec build/obj/drv8350.o
+ *fill*         0x0000000008013dac        0x4 
  .text.drv8350_read_faults
-                0x0000000008013e00       0x28 build/obj/drv8350.o
-                0x0000000008013e00                drv8350_read_faults
- *fill*         0x0000000008013e28        0x8 
+                0x0000000008013db0       0x28 build/obj/drv8350.o
+                0x0000000008013db0                drv8350_read_faults
+ *fill*         0x0000000008013dd8        0x8 
  .text.ADC_GetInjectedConversionValue
-                0x0000000008013e30       0x1c build/obj/stm32f4xx_adc.o
-                0x0000000008013e30                ADC_GetInjectedConversionValue
- *fill*         0x0000000008013e4c        0x4 
+                0x0000000008013de0       0x1c build/obj/stm32f4xx_adc.o
+                0x0000000008013de0                ADC_GetInjectedConversionValue
+ *fill*         0x0000000008013dfc        0x4 
  .text.ADC_ClearITPendingBit
-                0x0000000008013e50        0x8 build/obj/stm32f4xx_adc.o
-                0x0000000008013e50                ADC_ClearITPendingBit
- *fill*         0x0000000008013e58        0x8 
+                0x0000000008013e00        0x8 build/obj/stm32f4xx_adc.o
+                0x0000000008013e00                ADC_ClearITPendingBit
+ *fill*         0x0000000008013e08        0x8 
  .text.EXTI_GetFlagStatus
-                0x0000000008013e60       0x14 build/obj/stm32f4xx_exti.o
-                0x0000000008013e60                EXTI_GetFlagStatus
- *fill*         0x0000000008013e74        0xc 
+                0x0000000008013e10       0x14 build/obj/stm32f4xx_exti.o
+                0x0000000008013e10                EXTI_GetFlagStatus
+ *fill*         0x0000000008013e24        0xc 
  .text.EXTI_ClearFlag
-                0x0000000008013e80        0xc build/obj/stm32f4xx_exti.o
-                0x0000000008013e80                EXTI_ClearFlag
- *fill*         0x0000000008013e8c        0x4 
+                0x0000000008013e30        0xc build/obj/stm32f4xx_exti.o
+                0x0000000008013e30                EXTI_ClearFlag
+ *fill*         0x0000000008013e3c        0x4 
  .text.EXTI_GetITStatus
-                0x0000000008013e90        0x4 build/obj/stm32f4xx_exti.o
-                0x0000000008013e90                EXTI_GetITStatus
- *fill*         0x0000000008013e94        0xc 
+                0x0000000008013e40        0x4 build/obj/stm32f4xx_exti.o
+                0x0000000008013e40                EXTI_GetITStatus
+ *fill*         0x0000000008013e44        0xc 
  .text.EXTI_ClearITPendingBit
-                0x0000000008013ea0        0xc build/obj/stm32f4xx_exti.o
-                0x0000000008013ea0                EXTI_ClearITPendingBit
- *fill*         0x0000000008013eac        0x4 
+                0x0000000008013e50        0xc build/obj/stm32f4xx_exti.o
+                0x0000000008013e50                EXTI_ClearITPendingBit
+ *fill*         0x0000000008013e5c        0x4 
  .text.TIM_SelectOCxM
-                0x0000000008013eb0       0x50 build/obj/stm32f4xx_tim.o
-                0x0000000008013eb0                TIM_SelectOCxM
+                0x0000000008013e60       0x50 build/obj/stm32f4xx_tim.o
+                0x0000000008013e60                TIM_SelectOCxM
  .text.TIM_CCxCmd
-                0x0000000008013f00       0x24 build/obj/stm32f4xx_tim.o
-                0x0000000008013f00                TIM_CCxCmd
- *fill*         0x0000000008013f24        0xc 
+                0x0000000008013eb0       0x24 build/obj/stm32f4xx_tim.o
+                0x0000000008013eb0                TIM_CCxCmd
+ *fill*         0x0000000008013ed4        0xc 
  .text.TIM_CCxNCmd
-                0x0000000008013f30       0x24 build/obj/stm32f4xx_tim.o
-                0x0000000008013f30                TIM_CCxNCmd
- *fill*         0x0000000008013f54        0xc 
+                0x0000000008013ee0       0x24 build/obj/stm32f4xx_tim.o
+                0x0000000008013ee0                TIM_CCxNCmd
+ *fill*         0x0000000008013f04        0xc 
  .text.TIM_GenerateEvent
-                0x0000000008013f60        0x4 build/obj/stm32f4xx_tim.o
-                0x0000000008013f60                TIM_GenerateEvent
- *fill*         0x0000000008013f64        0xc 
+                0x0000000008013f10        0x4 build/obj/stm32f4xx_tim.o
+                0x0000000008013f10                TIM_GenerateEvent
+ *fill*         0x0000000008013f14        0xc 
  .text.TIM_GetITStatus
-                0x0000000008013f70       0x14 build/obj/stm32f4xx_tim.o
-                0x0000000008013f70                TIM_GetITStatus
- *fill*         0x0000000008013f84        0xc 
+                0x0000000008013f20       0x14 build/obj/stm32f4xx_tim.o
+                0x0000000008013f20                TIM_GetITStatus
+ *fill*         0x0000000008013f34        0xc 
  .text.TIM_ClearITPendingBit
-                0x0000000008013f90        0x8 build/obj/stm32f4xx_tim.o
-                0x0000000008013f90                TIM_ClearITPendingBit
- *fill*         0x0000000008013f98        0x8 
- .text.floorf   0x0000000008013fa0       0x8c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-sf_floor.o)
-                0x0000000008013fa0                floorf
- *fill*         0x000000000801402c        0x4 
- .text.fmodf    0x0000000008014030       0xc0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_fmod.o)
-                0x0000000008014030                fmodf
- .text.logf     0x00000000080140f0       0xf8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_log.o)
-                0x00000000080140f0                logf
- *fill*         0x00000000080141e8        0x8 
- .text.sqrtf    0x00000000080141f0       0xac /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_sqrt.o)
-                0x00000000080141f0                sqrtf
- *fill*         0x000000000801429c        0x4 
+                0x0000000008013f40        0x8 build/obj/stm32f4xx_tim.o
+                0x0000000008013f40                TIM_ClearITPendingBit
+ *fill*         0x0000000008013f48        0x8 
+ .text.floorf   0x0000000008013f50       0x8c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-sf_floor.o)
+                0x0000000008013f50                floorf
+ *fill*         0x0000000008013fdc        0x4 
+ .text.fmodf    0x0000000008013fe0       0xc0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_fmod.o)
+                0x0000000008013fe0                fmodf
+ .text.logf     0x00000000080140a0       0xf8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_log.o)
+                0x00000000080140a0                logf
+ *fill*         0x0000000008014198        0x8 
+ .text.sqrtf    0x00000000080141a0       0xac /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_sqrt.o)
+                0x00000000080141a0                sqrtf
+ *fill*         0x000000000801424c        0x4 
  .text.__ieee754_fmodf
-                0x00000000080142a0      0x12c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_fmod.o)
-                0x00000000080142a0                __ieee754_fmodf
- *fill*         0x00000000080143cc        0x4 
+                0x0000000008014250      0x12c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_fmod.o)
+                0x0000000008014250                __ieee754_fmodf
+ *fill*         0x000000000801437c        0x4 
  .text.__ieee754_logf
-                0x00000000080143d0      0x20c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_log.o)
-                0x00000000080143d0                __ieee754_logf
- *fill*         0x00000000080145dc        0x4 
+                0x0000000008014380      0x20c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_log.o)
+                0x0000000008014380                __ieee754_logf
+ *fill*         0x000000000801458c        0x4 
  .text.__ieee754_sqrtf
-                0x00000000080145e0        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_sqrt.o)
-                0x00000000080145e0                __ieee754_sqrtf
- *fill*         0x00000000080145e8        0x8 
- .text.matherr  0x00000000080145f0        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
-                0x00000000080145f0                matherr
- *fill*         0x00000000080145f4        0xc 
- .text.nan      0x0000000008014600       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_nan.o)
-                0x0000000008014600                nan
- .text.__errno  0x0000000008014610        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
-                0x0000000008014610                __errno
+                0x0000000008014590        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_sqrt.o)
+                0x0000000008014590                __ieee754_sqrtf
+ *fill*         0x0000000008014598        0x8 
+ .text.matherr  0x00000000080145a0        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
+                0x00000000080145a0                matherr
+ *fill*         0x00000000080145a4        0xc 
+ .text.nan      0x00000000080145b0       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_nan.o)
+                0x00000000080145b0                nan
+ .text.__errno  0x00000000080145c0        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
+                0x00000000080145c0                __errno
  *(.rodata)
  *(.rodata.*)
- *fill*         0x000000000801461c        0x4 
+ *fill*         0x00000000080145cc        0x4 
  .rodata.chSysInit.str1.4
-                0x0000000008014620        0x5 build/obj/chsys.o
- *fill*         0x0000000008014625        0xb 
+                0x00000000080145d0        0x5 build/obj/chsys.o
+ *fill*         0x00000000080145d5        0xb 
  .rodata.ch_debug
-                0x0000000008014630       0x16 build/obj/chregistry.o
-                0x0000000008014630                ch_debug
- *fill*         0x0000000008014646        0xa 
- .rodata.vmt    0x0000000008014650       0x20 build/obj/serial.o
+                0x00000000080145e0       0x16 build/obj/chregistry.o
+                0x00000000080145e0                ch_debug
+ *fill*         0x00000000080145f6        0xa 
+ .rodata.vmt    0x0000000008014600       0x20 build/obj/serial.o
  .rodata.active_status
-                0x0000000008014670        0x2 build/obj/usb.o
- *fill*         0x0000000008014672        0xe 
+                0x0000000008014620        0x2 build/obj/usb.o
+ *fill*         0x0000000008014622        0xe 
  .rodata.halted_status
-                0x0000000008014680        0x2 build/obj/usb.o
- *fill*         0x0000000008014682        0xe 
+                0x0000000008014630        0x2 build/obj/usb.o
+ *fill*         0x0000000008014632        0xe 
  .rodata.zero_status
-                0x0000000008014690        0x2 build/obj/usb.o
- *fill*         0x0000000008014692        0xe 
+                0x0000000008014640        0x2 build/obj/usb.o
+ *fill*         0x0000000008014642        0xe 
  .rodata._stm32_dma_streams
-                0x00000000080146a0       0xc0 build/obj/stm32_dma.o
-                0x00000000080146a0                _stm32_dma_streams
+                0x0000000008014650       0xc0 build/obj/stm32_dma.o
+                0x0000000008014650                _stm32_dma_streams
  .rodata.ep0config
-                0x0000000008014760       0x24 build/obj/usb_lld.o
- *fill*         0x0000000008014784        0xc 
+                0x0000000008014710       0x24 build/obj/usb_lld.o
+ *fill*         0x0000000008014734        0xc 
  .rodata.fsparams
-                0x0000000008014790        0xc build/obj/usb_lld.o
- *fill*         0x000000000801479c        0x4 
+                0x0000000008014740        0xc build/obj/usb_lld.o
+ *fill*         0x000000000801474c        0x4 
  .rodata.pal_default_config
-                0x00000000080147a0       0xfc build/obj/board.o
-                0x00000000080147a0                pal_default_config
- *fill*         0x000000000801489c        0x4 
+                0x0000000008014750       0xfc build/obj/board.o
+                0x0000000008014750                pal_default_config
+ *fill*         0x000000000801484c        0x4 
  .rodata.fmodf.str1.4
-                0x00000000080148a0        0x6 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_fmod.o)
- *fill*         0x00000000080148a6        0xa 
+                0x0000000008014850        0x6 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_fmod.o)
+ *fill*         0x0000000008014856        0xa 
  .rodata.logf.str1.4
-                0x00000000080148b0        0x5 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_log.o)
+                0x0000000008014860        0x5 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_log.o)
                                           0x9 (size before relaxing)
- *fill*         0x00000000080148b5        0xb 
+ *fill*         0x0000000008014865        0xb 
  .rodata.sqrtf.str1.4
-                0x00000000080148c0        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_sqrt.o)
+                0x0000000008014870        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_sqrt.o)
                                           0x6 (size before relaxing)
- *fill*         0x00000000080148c8        0x8 
- .rodata.Zero   0x00000000080148d0        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_fmod.o)
+ *fill*         0x0000000008014878        0x8 
+ .rodata.Zero   0x0000000008014880        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_fmod.o)
  *(.glue_7t)
- .glue_7t       0x00000000080148d8        0x0 linker stubs
+ .glue_7t       0x0000000008014888        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00000000080148d8        0x0 linker stubs
+ .glue_7        0x0000000008014888        0x0 linker stubs
  *(.gcc*)
 
-.vfp11_veneer   0x00000000080148d8        0x0
- .vfp11_veneer  0x00000000080148d8        0x0 linker stubs
+.vfp11_veneer   0x0000000008014888        0x0
+ .vfp11_veneer  0x0000000008014888        0x0 linker stubs
 
-.v4_bx          0x00000000080148d8        0x0
- .v4_bx         0x00000000080148d8        0x0 linker stubs
+.v4_bx          0x0000000008014888        0x0
+ .v4_bx         0x0000000008014888        0x0 linker stubs
 
-.iplt           0x00000000080148d8        0x0
- .iplt          0x00000000080148d8        0x0 build/obj/crt0_v7m.o
+.iplt           0x0000000008014888        0x0
+ .iplt          0x0000000008014888        0x0 build/obj/crt0_v7m.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x00000000080148d8        0x0
+.ARM.exidx      0x0000000008014888        0x0
                 [!provide]                        PROVIDE (__exidx_start = .)
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                        PROVIDE (__exidx_end = .)
@@ -7879,11 +7875,11 @@ destructors     0x000000000800c000        0x0
 .eh_frame
  *(.eh_frame)
 
-.textalign      0x00000000080148d8        0x0
-                0x00000000080148d8                . = ALIGN (0x8)
-                0x00000000080148d8                . = ALIGN (0x4)
-                0x00000000080148d8                _etext = .
-                0x00000000080148d8                _textdata = _etext
+.textalign      0x0000000008014888        0x0
+                0x0000000008014888                . = ALIGN (0x8)
+                0x0000000008014888                . = ALIGN (0x4)
+                0x0000000008014888                _etext = .
+                0x0000000008014888                _textdata = _etext
                 0x000000000805fff0                _crcinfo_start_address = 0x805fff0
 
 .crcinfo        0x000000000805fff0        0x8
@@ -7911,37 +7907,39 @@ destructors     0x000000000800c000        0x0
                 0x0000000020001000                __process_stack_end__ = .
                 0x0000000020001000                __main_thread_stack_end__ = .
 
-.data           0x0000000020001000      0x440 load address 0x00000000080148d8
+.data           0x0000000020001000      0x440 load address 0x0000000008014888
                 0x0000000020001000                . = ALIGN (0x4)
                 0x0000000020001000                PROVIDE (_data = .)
  *(.data)
  *(.data.*)
+ .data.data     0x0000000020001000        0x1 build/obj/main.o
+                0x0000000020001000                data
+ *fill*         0x0000000020001001        0x3 
  .data.comm_step_prev.13926
-                0x0000000020001000        0x4 build/obj/mcpwm.o
+                0x0000000020001004        0x4 build/obj/mcpwm.o
  .data.enc_counts
-                0x0000000020001004        0x4 build/obj/encoder.o
+                0x0000000020001008        0x4 build/obj/encoder.o
  .data.ang_hall_int_prev.13584
-                0x0000000020001008        0x4 build/obj/mcpwm_foc.o
+                0x000000002000100c        0x4 build/obj/mcpwm_foc.o
  .data.using_hall.13586
-                0x000000002000100c        0x1 build/obj/mcpwm_foc.o
+                0x0000000020001010        0x1 build/obj/mcpwm_foc.o
  .data.__fdlib_version
-                0x000000002000100d        0x1 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_lib_ver.o)
-                0x000000002000100d                __fdlib_version
- *fill*         0x000000002000100e        0x2 
+                0x0000000020001011        0x1 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_lib_ver.o)
+                0x0000000020001011                __fdlib_version
+ *fill*         0x0000000020001012        0x2 
  .data._impure_ptr
-                0x0000000020001010        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-impure.o)
-                0x0000000020001010                _impure_ptr
- *fill*         0x0000000020001014        0x4 
+                0x0000000020001014        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-impure.o)
+                0x0000000020001014                _impure_ptr
  .data.impure_data
                 0x0000000020001018      0x428 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-impure.o)
  *(.ramtext)
                 0x0000000020001440                . = ALIGN (0x4)
                 0x0000000020001440                PROVIDE (_edata = .)
 
-.igot.plt       0x0000000020001440        0x0 load address 0x0000000008014d18
+.igot.plt       0x0000000020001440        0x0 load address 0x0000000008014cc8
  .igot.plt      0x0000000020001440        0x0 build/obj/crt0_v7m.o
 
-.bss            0x0000000020001440     0x38e0 load address 0x0000000008014d18
+.bss            0x0000000020001440     0x38d8 load address 0x0000000008014cc8
                 0x0000000020001440                . = ALIGN (0x4)
                 0x0000000020001440                PROVIDE (_bss_start = .)
  *(.bss)
@@ -7979,364 +7977,362 @@ destructors     0x000000000800c000        0x0
                 0x0000000020001bf0                SD4
  .bss.SD6       0x0000000020001d48      0x158 build/obj/serial_lld.o
                 0x0000000020001d48                SD6
- .bss.data      0x0000000020001ea0        0x8 build/obj/main.o
-                0x0000000020001ea0                data
  .bss.cnt.11740
-                0x0000000020001ea8        0x4 build/obj/ledpwm.o
+                0x0000000020001ea0        0x4 build/obj/ledpwm.o
  .bss.led_values
-                0x0000000020001eac        0x8 build/obj/ledpwm.o
+                0x0000000020001ea4        0x8 build/obj/ledpwm.o
  .bss.comm_step
-                0x0000000020001eb4        0x4 build/obj/mcpwm.o
- .bss.conf      0x0000000020001eb8        0x4 build/obj/mcpwm.o
+                0x0000000020001eac        0x4 build/obj/mcpwm.o
+ .bss.conf      0x0000000020001eb0        0x4 build/obj/mcpwm.o
  .bss.control_mode
-                0x0000000020001ebc        0x1 build/obj/mcpwm.o
- *fill*         0x0000000020001ebd        0x3 
+                0x0000000020001eb4        0x1 build/obj/mcpwm.o
+ *fill*         0x0000000020001eb5        0x3 
  .bss.curr0_offset
-                0x0000000020001ec0        0x4 build/obj/mcpwm.o
+                0x0000000020001eb8        0x4 build/obj/mcpwm.o
  .bss.curr0_sum
-                0x0000000020001ec4        0x4 build/obj/mcpwm.o
+                0x0000000020001ebc        0x4 build/obj/mcpwm.o
  .bss.curr1_offset
-                0x0000000020001ec8        0x4 build/obj/mcpwm.o
+                0x0000000020001ec0        0x4 build/obj/mcpwm.o
  .bss.curr1_sum
-                0x0000000020001ecc        0x4 build/obj/mcpwm.o
+                0x0000000020001ec4        0x4 build/obj/mcpwm.o
  .bss.curr2_offset
-                0x0000000020001ed0        0x4 build/obj/mcpwm.o
+                0x0000000020001ec8        0x4 build/obj/mcpwm.o
  .bss.curr2_sum
-                0x0000000020001ed4        0x4 build/obj/mcpwm.o
+                0x0000000020001ecc        0x4 build/obj/mcpwm.o
  .bss.curr_samp_volt
-                0x0000000020001ed8        0x4 build/obj/mcpwm.o
+                0x0000000020001ed0        0x4 build/obj/mcpwm.o
  .bss.curr_start_samples
-                0x0000000020001edc        0x4 build/obj/mcpwm.o
+                0x0000000020001ed4        0x4 build/obj/mcpwm.o
  .bss.current_fir_coeffs
-                0x0000000020001ee0       0x40 build/obj/mcpwm.o
+                0x0000000020001ed8       0x40 build/obj/mcpwm.o
  .bss.current_fir_index
-                0x0000000020001f20        0x4 build/obj/mcpwm.o
+                0x0000000020001f18        0x4 build/obj/mcpwm.o
  .bss.current_fir_samples
-                0x0000000020001f24       0x40 build/obj/mcpwm.o
+                0x0000000020001f1c       0x40 build/obj/mcpwm.o
  .bss.dccal_done
-                0x0000000020001f64        0x1 build/obj/mcpwm.o
- *fill*         0x0000000020001f65        0x3 
+                0x0000000020001f5c        0x1 build/obj/mcpwm.o
+ *fill*         0x0000000020001f5d        0x3 
  .bss.detect_now.13905
-                0x0000000020001f68        0x4 build/obj/mcpwm.o
+                0x0000000020001f60        0x4 build/obj/mcpwm.o
  .bss.detect_step
-                0x0000000020001f6c        0x4 build/obj/mcpwm.o
+                0x0000000020001f64        0x4 build/obj/mcpwm.o
  .bss.direction
-                0x0000000020001f70        0x4 build/obj/mcpwm.o
+                0x0000000020001f68        0x4 build/obj/mcpwm.o
  .bss.dutycycle_now
-                0x0000000020001f74        0x4 build/obj/mcpwm.o
+                0x0000000020001f6c        0x4 build/obj/mcpwm.o
  .bss.hall_to_phase_table
-                0x0000000020001f78       0x40 build/obj/mcpwm.o
+                0x0000000020001f70       0x40 build/obj/mcpwm.o
  .bss.ignore_iterations
-                0x0000000020001fb8        0x4 build/obj/mcpwm.o
+                0x0000000020001fb0        0x4 build/obj/mcpwm.o
  .bss.last_current_sample
-                0x0000000020001fbc        0x4 build/obj/mcpwm.o
+                0x0000000020001fb4        0x4 build/obj/mcpwm.o
  .bss.last_current_sample_filtered
-                0x0000000020001fc0        0x4 build/obj/mcpwm.o
+                0x0000000020001fb8        0x4 build/obj/mcpwm.o
  .bss.last_inj_adc_isr_duration
-                0x0000000020001fc4        0x4 build/obj/mcpwm.o
+                0x0000000020001fbc        0x4 build/obj/mcpwm.o
  .bss.m_pll_speed
-                0x0000000020001fc8        0x4 build/obj/mcpwm.o
+                0x0000000020001fc0        0x4 build/obj/mcpwm.o
  .bss.mcpwm_detect_avg_samples
-                0x0000000020001fcc       0x18 build/obj/mcpwm.o
+                0x0000000020001fc4       0x18 build/obj/mcpwm.o
  .bss.mcpwm_detect_currents
-                0x0000000020001fe4       0x18 build/obj/mcpwm.o
-                0x0000000020001fe4                mcpwm_detect_currents
+                0x0000000020001fdc       0x18 build/obj/mcpwm.o
+                0x0000000020001fdc                mcpwm_detect_currents
  .bss.mcpwm_detect_currents_avg
-                0x0000000020001ffc       0x18 build/obj/mcpwm.o
+                0x0000000020001ff4       0x18 build/obj/mcpwm.o
  .bss.mcpwm_detect_currents_diff
-                0x0000000020002014       0x18 build/obj/mcpwm.o
-                0x0000000020002014                mcpwm_detect_currents_diff
+                0x000000002000200c       0x18 build/obj/mcpwm.o
+                0x000000002000200c                mcpwm_detect_currents_diff
  .bss.mcpwm_detect_voltages
-                0x000000002000202c       0x18 build/obj/mcpwm.o
-                0x000000002000202c                mcpwm_detect_voltages
+                0x0000000020002024       0x18 build/obj/mcpwm.o
+                0x0000000020002024                mcpwm_detect_voltages
  .bss.mcpwm_vzero
-                0x0000000020002044        0x4 build/obj/mcpwm.o
-                0x0000000020002044                mcpwm_vzero
+                0x000000002000203c        0x4 build/obj/mcpwm.o
+                0x000000002000203c                mcpwm_vzero
  .bss.prev_tot_sample.13927
-                0x0000000020002048        0x4 build/obj/mcpwm.o
- .bss.rpm_now   0x000000002000204c        0x4 build/obj/mcpwm.o
- .bss.state     0x0000000020002050        0x1 build/obj/mcpwm.o
- *fill*         0x0000000020002051        0x3 
+                0x0000000020002040        0x4 build/obj/mcpwm.o
+ .bss.rpm_now   0x0000000020002044        0x4 build/obj/mcpwm.o
+ .bss.state     0x0000000020002048        0x1 build/obj/mcpwm.o
+ *fill*         0x0000000020002049        0x3 
  .bss.switching_frequency_now
-                0x0000000020002054        0x4 build/obj/mcpwm.o
+                0x000000002000204c        0x4 build/obj/mcpwm.o
  .bss.tachometer
-                0x0000000020002058        0x4 build/obj/mcpwm.o
+                0x0000000020002050        0x4 build/obj/mcpwm.o
  .bss.timer_struct
-                0x000000002000205c       0x1c build/obj/mcpwm.o
+                0x0000000020002054       0x1c build/obj/mcpwm.o
  .bss.sys_lock_cnt
-                0x0000000020002078        0x4 build/obj/utils.o
+                0x0000000020002070        0x4 build/obj/utils.o
  .bss.fault_vec
-                0x000000002000207c      0x7d0 build/obj/terminal.o
+                0x0000000020002074      0x7d0 build/obj/terminal.o
  .bss.fault_vec_write
-                0x000000002000284c        0x4 build/obj/terminal.o
+                0x0000000020002844        0x4 build/obj/terminal.o
  .bss.feed_counter
-                0x0000000020002850       0x28 build/obj/timeout.o
+                0x0000000020002848       0x28 build/obj/timeout.o
  .bss.angle.11921
-                0x0000000020002878        0x4 build/obj/encoder.o
+                0x0000000020002870        0x4 build/obj/encoder.o
  .bss.bad_pulses.11932
-                0x000000002000287c        0x4 build/obj/encoder.o
+                0x0000000020002874        0x4 build/obj/encoder.o
  .bss.index_found
-                0x0000000020002880        0x1 build/obj/encoder.o
- *fill*         0x0000000020002881        0x3 
+                0x0000000020002878        0x1 build/obj/encoder.o
+ *fill*         0x0000000020002879        0x3 
  .bss.last_enc_angle
-                0x0000000020002884        0x4 build/obj/encoder.o
- .bss.mode      0x0000000020002888        0x1 build/obj/encoder.o
- *fill*         0x0000000020002889        0x3 
+                0x000000002000287c        0x4 build/obj/encoder.o
+ .bss.mode      0x0000000020002880        0x1 build/obj/encoder.o
+ *fill*         0x0000000020002881        0x3 
  .bss.spi_error_cnt
-                0x000000002000288c        0x4 build/obj/encoder.o
+                0x0000000020002884        0x4 build/obj/encoder.o
  .bss.spi_error_rate
-                0x0000000020002890        0x4 build/obj/encoder.o
- .bss.spi_val   0x0000000020002894        0x2 build/obj/encoder.o
- *fill*         0x0000000020002896        0x2 
+                0x0000000020002888        0x4 build/obj/encoder.o
+ .bss.spi_val   0x000000002000288c        0x2 build/obj/encoder.o
+ *fill*         0x000000002000288e        0x2 
  .bss.ADC_Value
-                0x0000000020002898       0x1e build/obj/mc_interface.o
-                0x0000000020002898                ADC_Value
- *fill*         0x00000000200028b6        0x2 
+                0x0000000020002890       0x1e build/obj/mc_interface.o
+                0x0000000020002890                ADC_Value
+ *fill*         0x00000000200028ae        0x2 
  .bss.ADC_curr_norm_value
-                0x00000000200028b8        0xc build/obj/mc_interface.o
-                0x00000000200028b8                ADC_curr_norm_value
- .bss.a.13672   0x00000000200028c4        0x4 build/obj/mc_interface.o
+                0x00000000200028b0        0xc build/obj/mc_interface.o
+                0x00000000200028b0                ADC_curr_norm_value
+ .bss.a.13672   0x00000000200028bc        0x4 build/obj/mc_interface.o
  .bss.curr_diff_samples.13660
-                0x00000000200028c8        0x4 build/obj/mc_interface.o
+                0x00000000200028c0        0x4 build/obj/mc_interface.o
  .bss.curr_diff_sum.13659
-                0x00000000200028cc        0x4 build/obj/mc_interface.o
+                0x00000000200028c4        0x4 build/obj/mc_interface.o
  .bss.drv_config_fault
-                0x00000000200028d0        0x1 build/obj/mc_interface.o
- *fill*         0x00000000200028d1        0x3 
+                0x00000000200028c8        0x1 build/obj/mc_interface.o
+ *fill*         0x00000000200028c9        0x3 
  .bss.m_amp_seconds
-                0x00000000200028d4        0x4 build/obj/mc_interface.o
+                0x00000000200028cc        0x4 build/obj/mc_interface.o
  .bss.m_amp_seconds_charged
-                0x00000000200028d8        0x4 build/obj/mc_interface.o
+                0x00000000200028d0        0x4 build/obj/mc_interface.o
  .bss.m_bms_fet_status
-                0x00000000200028dc        0x2 build/obj/mc_interface.o
- *fill*         0x00000000200028de        0x2 
- .bss.m_conf    0x00000000200028e0      0x1c8 build/obj/mc_interface.o
+                0x00000000200028d4        0x2 build/obj/mc_interface.o
+ *fill*         0x00000000200028d6        0x2 
+ .bss.m_conf    0x00000000200028d8      0x1c8 build/obj/mc_interface.o
  .bss.m_current_bms
-                0x0000000020002aa8        0x4 build/obj/mc_interface.o
+                0x0000000020002aa0        0x4 build/obj/mc_interface.o
  .bss.m_cycles_running
-                0x0000000020002aac        0x4 build/obj/mc_interface.o
- .bss.m_enviro  0x0000000020002ab0        0x2 build/obj/mc_interface.o
+                0x0000000020002aa4        0x4 build/obj/mc_interface.o
+ .bss.m_enviro  0x0000000020002aa8        0x2 build/obj/mc_interface.o
  .bss.m_fault_now
-                0x0000000020002ab2        0x1 build/obj/mc_interface.o
- *fill*         0x0000000020002ab3        0x1 
+                0x0000000020002aaa        0x1 build/obj/mc_interface.o
+ *fill*         0x0000000020002aab        0x1 
  .bss.m_gate_driver_voltage
-                0x0000000020002ab4        0x4 build/obj/mc_interface.o
+                0x0000000020002aac        0x4 build/obj/mc_interface.o
  .bss.m_ignore_iterations
-                0x0000000020002ab8        0x4 build/obj/mc_interface.o
+                0x0000000020002ab0        0x4 build/obj/mc_interface.o
  .bss.m_input_current_iterations
-                0x0000000020002abc        0x4 build/obj/mc_interface.o
+                0x0000000020002ab4        0x4 build/obj/mc_interface.o
  .bss.m_input_current_sum
-                0x0000000020002ac0        0x4 build/obj/mc_interface.o
+                0x0000000020002ab8        0x4 build/obj/mc_interface.o
  .bss.m_last_adc_duration_sample
-                0x0000000020002ac4        0x4 build/obj/mc_interface.o
+                0x0000000020002abc        0x4 build/obj/mc_interface.o
  .bss.m_motor_current_iterations
-                0x0000000020002ac8        0x4 build/obj/mc_interface.o
+                0x0000000020002ac0        0x4 build/obj/mc_interface.o
  .bss.m_motor_current_sum
-                0x0000000020002acc        0x4 build/obj/mc_interface.o
+                0x0000000020002ac4        0x4 build/obj/mc_interface.o
  .bss.m_motor_current_unbalance
-                0x0000000020002ad0        0x4 build/obj/mc_interface.o
+                0x0000000020002ac8        0x4 build/obj/mc_interface.o
  .bss.m_motor_current_unbalance_error_rate
-                0x0000000020002ad4        0x4 build/obj/mc_interface.o
+                0x0000000020002acc        0x4 build/obj/mc_interface.o
  .bss.m_motor_id_iterations
-                0x0000000020002ad8        0x4 build/obj/mc_interface.o
+                0x0000000020002ad0        0x4 build/obj/mc_interface.o
  .bss.m_motor_id_sum
-                0x0000000020002adc        0x4 build/obj/mc_interface.o
+                0x0000000020002ad4        0x4 build/obj/mc_interface.o
  .bss.m_motor_iq_iterations
-                0x0000000020002ae0        0x4 build/obj/mc_interface.o
+                0x0000000020002ad8        0x4 build/obj/mc_interface.o
  .bss.m_motor_iq_sum
-                0x0000000020002ae4        0x4 build/obj/mc_interface.o
+                0x0000000020002adc        0x4 build/obj/mc_interface.o
  .bss.m_motor_vd_iterations
-                0x0000000020002ae8        0x4 build/obj/mc_interface.o
+                0x0000000020002ae0        0x4 build/obj/mc_interface.o
  .bss.m_motor_vd_sum
-                0x0000000020002aec        0x4 build/obj/mc_interface.o
+                0x0000000020002ae4        0x4 build/obj/mc_interface.o
  .bss.m_motor_vq_iterations
-                0x0000000020002af0        0x4 build/obj/mc_interface.o
+                0x0000000020002ae8        0x4 build/obj/mc_interface.o
  .bss.m_motor_vq_sum
-                0x0000000020002af4        0x4 build/obj/mc_interface.o
+                0x0000000020002aec        0x4 build/obj/mc_interface.o
  .bss.m_raw_gas_value
-                0x0000000020002af8        0x2 build/obj/mc_interface.o
+                0x0000000020002af0        0x2 build/obj/mc_interface.o
  .bss.m_raw_reku_value
-                0x0000000020002afa        0x2 build/obj/mc_interface.o
+                0x0000000020002af2        0x2 build/obj/mc_interface.o
  .bss.m_sample_int
-                0x0000000020002afc        0x4 build/obj/mc_interface.o
+                0x0000000020002af4        0x4 build/obj/mc_interface.o
  .bss.m_sample_len
-                0x0000000020002b00        0x4 build/obj/mc_interface.o
+                0x0000000020002af8        0x4 build/obj/mc_interface.o
  .bss.m_sample_mode
-                0x0000000020002b04        0x1 build/obj/mc_interface.o
+                0x0000000020002afc        0x1 build/obj/mc_interface.o
  .bss.m_sample_mode_last
-                0x0000000020002b05        0x1 build/obj/mc_interface.o
- *fill*         0x0000000020002b06        0x2 
+                0x0000000020002afd        0x1 build/obj/mc_interface.o
+ *fill*         0x0000000020002afe        0x2 
  .bss.m_sample_now
-                0x0000000020002b08        0x4 build/obj/mc_interface.o
+                0x0000000020002b00        0x4 build/obj/mc_interface.o
  .bss.m_sample_trigger
-                0x0000000020002b0c        0x4 build/obj/mc_interface.o
+                0x0000000020002b04        0x4 build/obj/mc_interface.o
  .bss.m_temp_motor
-                0x0000000020002b10        0x4 build/obj/mc_interface.o
+                0x0000000020002b08        0x4 build/obj/mc_interface.o
  .bss.m_voltage_bms
-                0x0000000020002b14        0x4 build/obj/mc_interface.o
+                0x0000000020002b0c        0x4 build/obj/mc_interface.o
  .bss.m_voltage_display
-                0x0000000020002b18        0x4 build/obj/mc_interface.o
+                0x0000000020002b10        0x4 build/obj/mc_interface.o
  .bss.m_watt_seconds
-                0x0000000020002b1c        0x4 build/obj/mc_interface.o
+                0x0000000020002b14        0x4 build/obj/mc_interface.o
  .bss.m_watt_seconds_charged
-                0x0000000020002b20        0x4 build/obj/mc_interface.o
+                0x0000000020002b18        0x4 build/obj/mc_interface.o
  .bss.pwn_done_func
-                0x0000000020002b24        0x4 build/obj/mc_interface.o
+                0x0000000020002b1c        0x4 build/obj/mc_interface.o
  .bss.sample_send_tp
-                0x0000000020002b28        0x4 build/obj/mc_interface.o
+                0x0000000020002b20        0x4 build/obj/mc_interface.o
  .bss.wrong_DRV_iterations.13656
-                0x0000000020002b2c        0x4 build/obj/mc_interface.o
+                0x0000000020002b24        0x4 build/obj/mc_interface.o
  .bss.wrong_voltage_iterations.13651
-                0x0000000020002b30        0x4 build/obj/mc_interface.o
+                0x0000000020002b28        0x4 build/obj/mc_interface.o
  .bss.ang_hall.13589
-                0x0000000020002b34        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b2c        0x4 build/obj/mcpwm_foc.o
  .bss.angle_last.13406
-                0x0000000020002b38        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b30        0x4 build/obj/mcpwm_foc.o
  .bss.d_filter.13541
-                0x0000000020002b3c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b34        0x4 build/obj/mcpwm_foc.o
  .bss.dt_int.13540
-                0x0000000020002b40        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b38        0x4 build/obj/mcpwm_foc.o
  .bss.duty_filtered.13367
-                0x0000000020002b44        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b3c        0x4 build/obj/mcpwm_foc.o
  .bss.duty_i_term.13371
-                0x0000000020002b48        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b40        0x4 build/obj/mcpwm_foc.o
  .bss.i_term.13535
-                0x0000000020002b4c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b44        0x4 build/obj/mcpwm_foc.o
  .bss.id_set_boost.13382
-                0x0000000020002b50        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b48        0x4 build/obj/mcpwm_foc.o
  .bss.id_set_boost.13385
-                0x0000000020002b54        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b4c        0x4 build/obj/mcpwm_foc.o
  .bss.id_set_fw.13378
-                0x0000000020002b58        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b50        0x4 build/obj/mcpwm_foc.o
  .bss.id_set_fw.13381
-                0x0000000020002b5c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b54        0x4 build/obj/mcpwm_foc.o
  .bss.id_set_fw.13384
-                0x0000000020002b60        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b58        0x4 build/obj/mcpwm_foc.o
  .bss.inductance_state.13358
-                0x0000000020002b64        0x4 build/obj/mcpwm_foc.o
- .bss.m_conf    0x0000000020002b68        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b5c        0x4 build/obj/mcpwm_foc.o
+ .bss.m_conf    0x0000000020002b60        0x4 build/obj/mcpwm_foc.o
  .bss.m_control_mode
-                0x0000000020002b6c        0x1 build/obj/mcpwm_foc.o
- *fill*         0x0000000020002b6d        0x3 
+                0x0000000020002b64        0x1 build/obj/mcpwm_foc.o
+ *fill*         0x0000000020002b65        0x3 
  .bss.m_curr0_offset
-                0x0000000020002b70        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b68        0x4 build/obj/mcpwm_foc.o
  .bss.m_curr0_sum
-                0x0000000020002b74        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b6c        0x4 build/obj/mcpwm_foc.o
  .bss.m_curr1_offset
-                0x0000000020002b78        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b70        0x4 build/obj/mcpwm_foc.o
  .bss.m_curr1_sum
-                0x0000000020002b7c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b74        0x4 build/obj/mcpwm_foc.o
  .bss.m_curr2_offset
-                0x0000000020002b80        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b78        0x4 build/obj/mcpwm_foc.o
  .bss.m_curr2_sum
-                0x0000000020002b84        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b7c        0x4 build/obj/mcpwm_foc.o
  .bss.m_curr_samples
-                0x0000000020002b88        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b80        0x4 build/obj/mcpwm_foc.o
  .bss.m_curr_unbalance
-                0x0000000020002b8c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b84        0x4 build/obj/mcpwm_foc.o
  .bss.m_dccal_done
-                0x0000000020002b90        0x1 build/obj/mcpwm_foc.o
- *fill*         0x0000000020002b91        0x3 
+                0x0000000020002b88        0x1 build/obj/mcpwm_foc.o
+ *fill*         0x0000000020002b89        0x3 
  .bss.m_duty_cycle_set
-                0x0000000020002b94        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b8c        0x4 build/obj/mcpwm_foc.o
  .bss.m_gamma_now
-                0x0000000020002b98        0x4 build/obj/mcpwm_foc.o
- .bss.m_id_set  0x0000000020002b9c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b90        0x4 build/obj/mcpwm_foc.o
+ .bss.m_id_set  0x0000000020002b94        0x4 build/obj/mcpwm_foc.o
  .bss.m_init_done
-                0x0000000020002ba0        0x1 build/obj/mcpwm_foc.o
- *fill*         0x0000000020002ba1        0x3 
- .bss.m_iq_set  0x0000000020002ba4        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002b98        0x1 build/obj/mcpwm_foc.o
+ *fill*         0x0000000020002b99        0x3 
+ .bss.m_iq_set  0x0000000020002b9c        0x4 build/obj/mcpwm_foc.o
  .bss.m_last_adc_isr_duration
-                0x0000000020002ba8        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002ba0        0x4 build/obj/mcpwm_foc.o
  .bss.m_motor_state
-                0x0000000020002bac       0x60 build/obj/mcpwm_foc.o
+                0x0000000020002ba4       0x60 build/obj/mcpwm_foc.o
  .bss.m_observer_x1
-                0x0000000020002c0c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c04        0x4 build/obj/mcpwm_foc.o
  .bss.m_observer_x2
-                0x0000000020002c10        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c08        0x4 build/obj/mcpwm_foc.o
  .bss.m_openloop_phase
-                0x0000000020002c14        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c0c        0x4 build/obj/mcpwm_foc.o
  .bss.m_openloop_speed
-                0x0000000020002c18        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c10        0x4 build/obj/mcpwm_foc.o
  .bss.m_output_on
-                0x0000000020002c1c        0x1 build/obj/mcpwm_foc.o
- *fill*         0x0000000020002c1d        0x3 
+                0x0000000020002c14        0x1 build/obj/mcpwm_foc.o
+ *fill*         0x0000000020002c15        0x3 
  .bss.m_phase_now_encoder
-                0x0000000020002c20        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c18        0x4 build/obj/mcpwm_foc.o
  .bss.m_phase_now_encoder_no_index
-                0x0000000020002c24        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c1c        0x4 build/obj/mcpwm_foc.o
  .bss.m_phase_now_observer
-                0x0000000020002c28        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c20        0x4 build/obj/mcpwm_foc.o
  .bss.m_phase_now_observer_override
-                0x0000000020002c2c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c24        0x4 build/obj/mcpwm_foc.o
  .bss.m_phase_now_override
-                0x0000000020002c30        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c28        0x4 build/obj/mcpwm_foc.o
  .bss.m_phase_observer_override
-                0x0000000020002c34        0x1 build/obj/mcpwm_foc.o
+                0x0000000020002c2c        0x1 build/obj/mcpwm_foc.o
  .bss.m_phase_override
-                0x0000000020002c35        0x1 build/obj/mcpwm_foc.o
- *fill*         0x0000000020002c36        0x2 
+                0x0000000020002c2d        0x1 build/obj/mcpwm_foc.o
+ *fill*         0x0000000020002c2e        0x2 
  .bss.m_pll_phase
-                0x0000000020002c38        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c30        0x4 build/obj/mcpwm_foc.o
  .bss.m_pll_speed
-                0x0000000020002c3c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c34        0x4 build/obj/mcpwm_foc.o
  .bss.m_pos_pid_now
-                0x0000000020002c40        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c38        0x4 build/obj/mcpwm_foc.o
  .bss.m_pos_pid_set
-                0x0000000020002c44        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c3c        0x4 build/obj/mcpwm_foc.o
  .bss.m_samples
-                0x0000000020002c48       0x14 build/obj/mcpwm_foc.o
+                0x0000000020002c40       0x14 build/obj/mcpwm_foc.o
  .bss.m_speed_pid_set_rpm
-                0x0000000020002c5c        0x4 build/obj/mcpwm_foc.o
- .bss.m_state   0x0000000020002c60        0x1 build/obj/mcpwm_foc.o
- *fill*         0x0000000020002c61        0x3 
+                0x0000000020002c54        0x4 build/obj/mcpwm_foc.o
+ .bss.m_state   0x0000000020002c58        0x1 build/obj/mcpwm_foc.o
+ *fill*         0x0000000020002c59        0x3 
  .bss.m_tachometer
-                0x0000000020002c64        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c5c        0x4 build/obj/mcpwm_foc.o
  .bss.m_tachometer_abs
-                0x0000000020002c68        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c60        0x4 build/obj/mcpwm_foc.o
  .bss.m_using_encoder
-                0x0000000020002c6c        0x1 build/obj/mcpwm_foc.o
- *fill*         0x0000000020002c6d        0x3 
+                0x0000000020002c64        0x1 build/obj/mcpwm_foc.o
+ *fill*         0x0000000020002c65        0x3 
  .bss.openloop_angle.13386
-                0x0000000020002c70        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c68        0x4 build/obj/mcpwm_foc.o
  .bss.prev_error.13536
-                0x0000000020002c74        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c6c        0x4 build/obj/mcpwm_foc.o
  .bss.rpm_now.13376
-                0x0000000020002c78        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c70        0x4 build/obj/mcpwm_foc.o
  .bss.skip.13345
-                0x0000000020002c7c        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c74        0x4 build/obj/mcpwm_foc.o
  .bss.step_last.13403
-                0x0000000020002c80        0x4 build/obj/mcpwm_foc.o
+                0x0000000020002c78        0x4 build/obj/mcpwm_foc.o
  .bss.was_full_brake.13370
-                0x0000000020002c84        0x1 build/obj/mcpwm_foc.o
+                0x0000000020002c7c        0x1 build/obj/mcpwm_foc.o
  .bss.m_dccal_done
-                0x0000000020002c85        0x1 build/obj/gpdrive.o
- *fill*         0x0000000020002c86        0x2 
+                0x0000000020002c7d        0x1 build/obj/gpdrive.o
+ *fill*         0x0000000020002c7e        0x2 
  .bss.m_fsw_now
-                0x0000000020002c88        0x4 build/obj/gpdrive.o
+                0x0000000020002c80        0x4 build/obj/gpdrive.o
  .bss.m_is_running
+                0x0000000020002c84        0x1 build/obj/gpdrive.o
+ *fill*         0x0000000020002c85        0x3 
+ .bss.m_last_adc_isr_duration
+                0x0000000020002c88        0x4 build/obj/gpdrive.o
+ .bss.m_output_mode
                 0x0000000020002c8c        0x1 build/obj/gpdrive.o
  *fill*         0x0000000020002c8d        0x3 
- .bss.m_last_adc_isr_duration
-                0x0000000020002c90        0x4 build/obj/gpdrive.o
- .bss.m_output_mode
-                0x0000000020002c94        0x1 build/obj/gpdrive.o
- *fill*         0x0000000020002c95        0x3 
  .bss.m_sample_buffer
-                0x0000000020002c98     0x2008 build/obj/gpdrive.o
+                0x0000000020002c90     0x2008 build/obj/gpdrive.o
  .bss.virtual_motor
-                0x0000000020004ca0       0x80 build/obj/virtual_motor.o
+                0x0000000020004c98       0x80 build/obj/virtual_motor.o
  *(COMMON)
-                0x0000000020004d20                . = ALIGN (0x4)
-                0x0000000020004d20                PROVIDE (_bss_end = .)
+                0x0000000020004d18                . = ALIGN (0x4)
+                0x0000000020004d18                PROVIDE (_bss_end = .)
                 [!provide]                        PROVIDE (end = .)
 
-.ram0           0x0000000020004d20        0x0 load address 0x0000000008014d18
-                0x0000000020004d20                . = ALIGN (0x4)
+.ram0           0x0000000020004d18        0x0 load address 0x0000000008014cc8
+                0x0000000020004d18                . = ALIGN (0x4)
  *(.ram0)
  *(.ram0.*)
-                0x0000000020004d20                . = ALIGN (0x4)
-                0x0000000020004d20                __ram0_free__ = .
+                0x0000000020004d18                . = ALIGN (0x4)
+                0x0000000020004d18                __ram0_free__ = .
 
 .ram1           0x0000000020000000        0x0
                 0x0000000020000000                . = ALIGN (0x4)
@@ -8387,7 +8383,7 @@ destructors     0x000000000800c000        0x0
  *(.ram7.*)
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram7_free__ = .
-                0x0000000020004d20                __heap_base__ = __ram0_free__
+                0x0000000020004d18                __heap_base__ = __ram0_free__
                 0x0000000020020000                __heap_end__ = __ram0_end__
                 0x0000000000000800                __process_stack_size__ = 0x800
                 0x0000000000000800                __main_stack_size__ = 0x800
@@ -8603,7 +8599,7 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .comment       0x000000000000007f       0x80 build/obj/stm32f4xx_exti.o
  .comment       0x000000000000007f       0x80 build/obj/stm32f4xx_tim.o
 
-.debug_info     0x0000000000000000    0x91397
+.debug_info     0x0000000000000000    0x91309
  .debug_info    0x0000000000000000       0xea build/obj/crt1.o
  .debug_info    0x00000000000000ea      0x1eb build/obj/vectors.o
  .debug_info    0x00000000000002d5     0x16d9 build/obj/chsys.o
@@ -8639,27 +8635,27 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_info    0x00000000000422e0     0x2a5e build/obj/icu_lld.o
  .debug_info    0x0000000000044d3e     0x2f95 build/obj/serial_lld.o
  .debug_info    0x0000000000047cd3     0x2510 build/obj/board.o
- .debug_info    0x000000000004a1e3     0x4527 build/obj/main.o
- .debug_info    0x000000000004e70a     0x2a03 build/obj/irq_handlers.o
- .debug_info    0x000000000005110d      0xfae build/obj/digital_filter.o
- .debug_info    0x00000000000520bb     0x2e7c build/obj/ledpwm.o
- .debug_info    0x0000000000054f37     0x7a96 build/obj/mcpwm.o
- .debug_info    0x000000000005c9cd     0x37ba build/obj/utils.o
- .debug_info    0x0000000000060187     0x688c build/obj/terminal.o
- .debug_info    0x0000000000066a13      0xf66 build/obj/timeout.o
- .debug_info    0x0000000000067979     0x43d5 build/obj/encoder.o
- .debug_info    0x000000000006bd4e     0x3930 build/obj/flash_helper.o
- .debug_info    0x000000000006f67e     0x8787 build/obj/mc_interface.o
- .debug_info    0x0000000000077e05     0x8298 build/obj/mcpwm_foc.o
- .debug_info    0x000000000008009d     0x509a build/obj/gpdrive.o
- .debug_info    0x0000000000085137     0x27a8 build/obj/timer.o
- .debug_info    0x00000000000878df     0x2380 build/obj/virtual_motor.o
- .debug_info    0x0000000000089c5f     0x434b build/obj/drv8350.o
- .debug_info    0x000000000008dfaa      0xc71 build/obj/stm32f4xx_adc.o
- .debug_info    0x000000000008ec1b      0x341 build/obj/stm32f4xx_exti.o
- .debug_info    0x000000000008ef5c     0x243b build/obj/stm32f4xx_tim.o
+ .debug_info    0x000000000004a1e3     0x4499 build/obj/main.o
+ .debug_info    0x000000000004e67c     0x2a03 build/obj/irq_handlers.o
+ .debug_info    0x000000000005107f      0xfae build/obj/digital_filter.o
+ .debug_info    0x000000000005202d     0x2e7c build/obj/ledpwm.o
+ .debug_info    0x0000000000054ea9     0x7a96 build/obj/mcpwm.o
+ .debug_info    0x000000000005c93f     0x37ba build/obj/utils.o
+ .debug_info    0x00000000000600f9     0x688c build/obj/terminal.o
+ .debug_info    0x0000000000066985      0xf66 build/obj/timeout.o
+ .debug_info    0x00000000000678eb     0x43d5 build/obj/encoder.o
+ .debug_info    0x000000000006bcc0     0x3930 build/obj/flash_helper.o
+ .debug_info    0x000000000006f5f0     0x8787 build/obj/mc_interface.o
+ .debug_info    0x0000000000077d77     0x8298 build/obj/mcpwm_foc.o
+ .debug_info    0x000000000008000f     0x509a build/obj/gpdrive.o
+ .debug_info    0x00000000000850a9     0x27a8 build/obj/timer.o
+ .debug_info    0x0000000000087851     0x2380 build/obj/virtual_motor.o
+ .debug_info    0x0000000000089bd1     0x434b build/obj/drv8350.o
+ .debug_info    0x000000000008df1c      0xc71 build/obj/stm32f4xx_adc.o
+ .debug_info    0x000000000008eb8d      0x341 build/obj/stm32f4xx_exti.o
+ .debug_info    0x000000000008eece     0x243b build/obj/stm32f4xx_tim.o
 
-.debug_abbrev   0x0000000000000000     0xc0df
+.debug_abbrev   0x0000000000000000     0xc098
  .debug_abbrev  0x0000000000000000       0xab build/obj/crt1.o
  .debug_abbrev  0x00000000000000ab       0xc7 build/obj/vectors.o
  .debug_abbrev  0x0000000000000172      0x4e9 build/obj/chsys.o
@@ -8695,27 +8691,27 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_abbrev  0x0000000000006a83      0x422 build/obj/icu_lld.o
  .debug_abbrev  0x0000000000006ea5      0x447 build/obj/serial_lld.o
  .debug_abbrev  0x00000000000072ec      0x27d build/obj/board.o
- .debug_abbrev  0x0000000000007569      0x3cb build/obj/main.o
- .debug_abbrev  0x0000000000007934      0x2a9 build/obj/irq_handlers.o
- .debug_abbrev  0x0000000000007bdd      0x37c build/obj/digital_filter.o
- .debug_abbrev  0x0000000000007f59      0x2ec build/obj/ledpwm.o
- .debug_abbrev  0x0000000000008245      0x57b build/obj/mcpwm.o
- .debug_abbrev  0x00000000000087c0      0x469 build/obj/utils.o
- .debug_abbrev  0x0000000000008c29      0x4b3 build/obj/terminal.o
- .debug_abbrev  0x00000000000090dc      0x3bf build/obj/timeout.o
- .debug_abbrev  0x000000000000949b      0x4f4 build/obj/encoder.o
- .debug_abbrev  0x000000000000998f      0x431 build/obj/flash_helper.o
- .debug_abbrev  0x0000000000009dc0      0x64c build/obj/mc_interface.o
- .debug_abbrev  0x000000000000a40c      0x5c1 build/obj/mcpwm_foc.o
- .debug_abbrev  0x000000000000a9cd      0x4ad build/obj/gpdrive.o
- .debug_abbrev  0x000000000000ae7a      0x325 build/obj/timer.o
- .debug_abbrev  0x000000000000b19f      0x410 build/obj/virtual_motor.o
- .debug_abbrev  0x000000000000b5af      0x506 build/obj/drv8350.o
- .debug_abbrev  0x000000000000bab5      0x1b3 build/obj/stm32f4xx_adc.o
- .debug_abbrev  0x000000000000bc68      0x1e1 build/obj/stm32f4xx_exti.o
- .debug_abbrev  0x000000000000be49      0x296 build/obj/stm32f4xx_tim.o
+ .debug_abbrev  0x0000000000007569      0x384 build/obj/main.o
+ .debug_abbrev  0x00000000000078ed      0x2a9 build/obj/irq_handlers.o
+ .debug_abbrev  0x0000000000007b96      0x37c build/obj/digital_filter.o
+ .debug_abbrev  0x0000000000007f12      0x2ec build/obj/ledpwm.o
+ .debug_abbrev  0x00000000000081fe      0x57b build/obj/mcpwm.o
+ .debug_abbrev  0x0000000000008779      0x469 build/obj/utils.o
+ .debug_abbrev  0x0000000000008be2      0x4b3 build/obj/terminal.o
+ .debug_abbrev  0x0000000000009095      0x3bf build/obj/timeout.o
+ .debug_abbrev  0x0000000000009454      0x4f4 build/obj/encoder.o
+ .debug_abbrev  0x0000000000009948      0x431 build/obj/flash_helper.o
+ .debug_abbrev  0x0000000000009d79      0x64c build/obj/mc_interface.o
+ .debug_abbrev  0x000000000000a3c5      0x5c1 build/obj/mcpwm_foc.o
+ .debug_abbrev  0x000000000000a986      0x4ad build/obj/gpdrive.o
+ .debug_abbrev  0x000000000000ae33      0x325 build/obj/timer.o
+ .debug_abbrev  0x000000000000b158      0x410 build/obj/virtual_motor.o
+ .debug_abbrev  0x000000000000b568      0x506 build/obj/drv8350.o
+ .debug_abbrev  0x000000000000ba6e      0x1b3 build/obj/stm32f4xx_adc.o
+ .debug_abbrev  0x000000000000bc21      0x1e1 build/obj/stm32f4xx_exti.o
+ .debug_abbrev  0x000000000000be02      0x296 build/obj/stm32f4xx_tim.o
 
-.debug_aranges  0x0000000000000000     0x1ef0
+.debug_aranges  0x0000000000000000     0x1ee8
  .debug_aranges
                 0x0000000000000000       0x28 build/obj/crt1.o
  .debug_aranges
@@ -8787,45 +8783,45 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000cc8       0x28 build/obj/board.o
  .debug_aranges
-                0x0000000000000cf0       0x68 build/obj/main.o
+                0x0000000000000cf0       0x60 build/obj/main.o
  .debug_aranges
-                0x0000000000000d58       0x40 build/obj/irq_handlers.o
+                0x0000000000000d50       0x40 build/obj/irq_handlers.o
  .debug_aranges
-                0x0000000000000d98       0x58 build/obj/digital_filter.o
+                0x0000000000000d90       0x58 build/obj/digital_filter.o
  .debug_aranges
-                0x0000000000000df0       0x40 build/obj/ledpwm.o
+                0x0000000000000de8       0x40 build/obj/ledpwm.o
  .debug_aranges
-                0x0000000000000e30      0x1f8 build/obj/mcpwm.o
+                0x0000000000000e28      0x1f8 build/obj/mcpwm.o
  .debug_aranges
-                0x0000000000001028       0xf0 build/obj/utils.o
+                0x0000000000001020       0xf0 build/obj/utils.o
  .debug_aranges
-                0x0000000000001118       0x40 build/obj/terminal.o
+                0x0000000000001110       0x40 build/obj/terminal.o
  .debug_aranges
-                0x0000000000001158       0x70 build/obj/timeout.o
+                0x0000000000001150       0x70 build/obj/timeout.o
  .debug_aranges
-                0x00000000000011c8       0xd8 build/obj/encoder.o
+                0x00000000000011c0       0xd8 build/obj/encoder.o
  .debug_aranges
-                0x00000000000012a0       0x50 build/obj/flash_helper.o
+                0x0000000000001298       0x50 build/obj/flash_helper.o
  .debug_aranges
-                0x00000000000012f0      0x388 build/obj/mc_interface.o
+                0x00000000000012e8      0x388 build/obj/mc_interface.o
  .debug_aranges
-                0x0000000000001678      0x230 build/obj/mcpwm_foc.o
+                0x0000000000001670      0x230 build/obj/mcpwm_foc.o
  .debug_aranges
-                0x00000000000018a8       0xc8 build/obj/gpdrive.o
+                0x00000000000018a0       0xc8 build/obj/gpdrive.o
  .debug_aranges
-                0x0000000000001970       0x38 build/obj/timer.o
+                0x0000000000001968       0x38 build/obj/timer.o
  .debug_aranges
-                0x00000000000019a8       0x48 build/obj/virtual_motor.o
+                0x00000000000019a0       0x48 build/obj/virtual_motor.o
  .debug_aranges
-                0x00000000000019f0       0xa8 build/obj/drv8350.o
+                0x00000000000019e8       0xa8 build/obj/drv8350.o
  .debug_aranges
-                0x0000000000001a98      0x148 build/obj/stm32f4xx_adc.o
+                0x0000000000001a90      0x148 build/obj/stm32f4xx_adc.o
  .debug_aranges
-                0x0000000000001be0       0x48 build/obj/stm32f4xx_exti.o
+                0x0000000000001bd8       0x48 build/obj/stm32f4xx_exti.o
  .debug_aranges
-                0x0000000000001c28      0x2c8 build/obj/stm32f4xx_tim.o
+                0x0000000000001c20      0x2c8 build/obj/stm32f4xx_tim.o
 
-.debug_ranges   0x0000000000000000     0x4750
+.debug_ranges   0x0000000000000000     0x4778
  .debug_ranges  0x0000000000000000       0x18 build/obj/crt1.o
  .debug_ranges  0x0000000000000018       0x10 build/obj/vectors.o
  .debug_ranges  0x0000000000000028      0x110 build/obj/chsys.o
@@ -8861,27 +8857,27 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_ranges  0x0000000000001650       0x70 build/obj/icu_lld.o
  .debug_ranges  0x00000000000016c0       0xe8 build/obj/serial_lld.o
  .debug_ranges  0x00000000000017a8       0x18 build/obj/board.o
- .debug_ranges  0x00000000000017c0       0x58 build/obj/main.o
- .debug_ranges  0x0000000000001818       0x30 build/obj/irq_handlers.o
- .debug_ranges  0x0000000000001848      0x100 build/obj/digital_filter.o
- .debug_ranges  0x0000000000001948       0x48 build/obj/ledpwm.o
- .debug_ranges  0x0000000000001990      0x850 build/obj/mcpwm.o
- .debug_ranges  0x00000000000021e0      0x1b8 build/obj/utils.o
- .debug_ranges  0x0000000000002398      0x270 build/obj/terminal.o
- .debug_ranges  0x0000000000002608       0xc8 build/obj/timeout.o
- .debug_ranges  0x00000000000026d0      0x190 build/obj/encoder.o
- .debug_ranges  0x0000000000002860       0xb8 build/obj/flash_helper.o
- .debug_ranges  0x0000000000002918      0xa90 build/obj/mc_interface.o
- .debug_ranges  0x00000000000033a8      0xa08 build/obj/mcpwm_foc.o
- .debug_ranges  0x0000000000003db0      0x170 build/obj/gpdrive.o
- .debug_ranges  0x0000000000003f20       0x40 build/obj/timer.o
- .debug_ranges  0x0000000000003f60      0x118 build/obj/virtual_motor.o
- .debug_ranges  0x0000000000004078      0x298 build/obj/drv8350.o
- .debug_ranges  0x0000000000004310      0x138 build/obj/stm32f4xx_adc.o
- .debug_ranges  0x0000000000004448       0x38 build/obj/stm32f4xx_exti.o
- .debug_ranges  0x0000000000004480      0x2d0 build/obj/stm32f4xx_tim.o
+ .debug_ranges  0x00000000000017c0       0x80 build/obj/main.o
+ .debug_ranges  0x0000000000001840       0x30 build/obj/irq_handlers.o
+ .debug_ranges  0x0000000000001870      0x100 build/obj/digital_filter.o
+ .debug_ranges  0x0000000000001970       0x48 build/obj/ledpwm.o
+ .debug_ranges  0x00000000000019b8      0x850 build/obj/mcpwm.o
+ .debug_ranges  0x0000000000002208      0x1b8 build/obj/utils.o
+ .debug_ranges  0x00000000000023c0      0x270 build/obj/terminal.o
+ .debug_ranges  0x0000000000002630       0xc8 build/obj/timeout.o
+ .debug_ranges  0x00000000000026f8      0x190 build/obj/encoder.o
+ .debug_ranges  0x0000000000002888       0xb8 build/obj/flash_helper.o
+ .debug_ranges  0x0000000000002940      0xa90 build/obj/mc_interface.o
+ .debug_ranges  0x00000000000033d0      0xa08 build/obj/mcpwm_foc.o
+ .debug_ranges  0x0000000000003dd8      0x170 build/obj/gpdrive.o
+ .debug_ranges  0x0000000000003f48       0x40 build/obj/timer.o
+ .debug_ranges  0x0000000000003f88      0x118 build/obj/virtual_motor.o
+ .debug_ranges  0x00000000000040a0      0x298 build/obj/drv8350.o
+ .debug_ranges  0x0000000000004338      0x138 build/obj/stm32f4xx_adc.o
+ .debug_ranges  0x0000000000004470       0x38 build/obj/stm32f4xx_exti.o
+ .debug_ranges  0x00000000000044a8      0x2d0 build/obj/stm32f4xx_tim.o
 
-.debug_line     0x0000000000000000    0x172a1
+.debug_line     0x0000000000000000    0x1726b
  .debug_line    0x0000000000000000      0x142 build/obj/crt1.o
  .debug_line    0x0000000000000142      0x135 build/obj/vectors.o
  .debug_line    0x0000000000000277      0x446 build/obj/chsys.o
@@ -8917,27 +8913,27 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_line    0x000000000000a87d      0x63f build/obj/icu_lld.o
  .debug_line    0x000000000000aebc      0x6cb build/obj/serial_lld.o
  .debug_line    0x000000000000b587      0x4ac build/obj/board.o
- .debug_line    0x000000000000ba33      0x674 build/obj/main.o
- .debug_line    0x000000000000c0a7      0x59e build/obj/irq_handlers.o
- .debug_line    0x000000000000c645      0x3fa build/obj/digital_filter.o
- .debug_line    0x000000000000ca3f      0x53c build/obj/ledpwm.o
- .debug_line    0x000000000000cf7b     0x1658 build/obj/mcpwm.o
- .debug_line    0x000000000000e5d3      0x85e build/obj/utils.o
- .debug_line    0x000000000000ee31      0xb7d build/obj/terminal.o
- .debug_line    0x000000000000f9ae      0x476 build/obj/timeout.o
- .debug_line    0x000000000000fe24      0x9d2 build/obj/encoder.o
- .debug_line    0x00000000000107f6      0x6da build/obj/flash_helper.o
- .debug_line    0x0000000000010ed0     0x1aba build/obj/mc_interface.o
- .debug_line    0x000000000001298a     0x1904 build/obj/mcpwm_foc.o
- .debug_line    0x000000000001428e      0xa4e build/obj/gpdrive.o
- .debug_line    0x0000000000014cdc      0x53d build/obj/timer.o
- .debug_line    0x0000000000015219      0x4b5 build/obj/virtual_motor.o
- .debug_line    0x00000000000156ce      0x89d build/obj/drv8350.o
- .debug_line    0x0000000000015f6b      0x553 build/obj/stm32f4xx_adc.o
- .debug_line    0x00000000000164be      0x21f build/obj/stm32f4xx_exti.o
- .debug_line    0x00000000000166dd      0xbc4 build/obj/stm32f4xx_tim.o
+ .debug_line    0x000000000000ba33      0x63e build/obj/main.o
+ .debug_line    0x000000000000c071      0x59e build/obj/irq_handlers.o
+ .debug_line    0x000000000000c60f      0x3fa build/obj/digital_filter.o
+ .debug_line    0x000000000000ca09      0x53c build/obj/ledpwm.o
+ .debug_line    0x000000000000cf45     0x1658 build/obj/mcpwm.o
+ .debug_line    0x000000000000e59d      0x85e build/obj/utils.o
+ .debug_line    0x000000000000edfb      0xb7d build/obj/terminal.o
+ .debug_line    0x000000000000f978      0x476 build/obj/timeout.o
+ .debug_line    0x000000000000fdee      0x9d2 build/obj/encoder.o
+ .debug_line    0x00000000000107c0      0x6da build/obj/flash_helper.o
+ .debug_line    0x0000000000010e9a     0x1aba build/obj/mc_interface.o
+ .debug_line    0x0000000000012954     0x1904 build/obj/mcpwm_foc.o
+ .debug_line    0x0000000000014258      0xa4e build/obj/gpdrive.o
+ .debug_line    0x0000000000014ca6      0x53d build/obj/timer.o
+ .debug_line    0x00000000000151e3      0x4b5 build/obj/virtual_motor.o
+ .debug_line    0x0000000000015698      0x89d build/obj/drv8350.o
+ .debug_line    0x0000000000015f35      0x553 build/obj/stm32f4xx_adc.o
+ .debug_line    0x0000000000016488      0x21f build/obj/stm32f4xx_exti.o
+ .debug_line    0x00000000000166a7      0xbc4 build/obj/stm32f4xx_tim.o
 
-.debug_str      0x0000000000000000     0xc8eb
+.debug_str      0x0000000000000000     0xc8d8
  .debug_str     0x0000000000000000      0x261 build/obj/crt1.o
                                         0x2a6 (size before relaxing)
  .debug_str     0x0000000000000261      0x15f build/obj/vectors.o
@@ -9008,46 +9004,46 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
                                        0x1803 (size before relaxing)
  .debug_str     0x000000000000436e        0x8 build/obj/board.o
                                        0x1549 (size before relaxing)
- .debug_str     0x0000000000004376     0x1d3f build/obj/main.o
-                                       0x37d1 (size before relaxing)
- .debug_str     0x00000000000060b5      0x1c6 build/obj/irq_handlers.o
+ .debug_str     0x0000000000004376     0x1cf7 build/obj/main.o
+                                       0x3789 (size before relaxing)
+ .debug_str     0x000000000000606d      0x1c6 build/obj/irq_handlers.o
                                        0x19ac (size before relaxing)
- .debug_str     0x000000000000627b       0xf9 build/obj/digital_filter.o
+ .debug_str     0x0000000000006233       0xf9 build/obj/digital_filter.o
                                         0x768 (size before relaxing)
- .debug_str     0x0000000000006374       0x7c build/obj/ledpwm.o
+ .debug_str     0x000000000000632c       0x7c build/obj/ledpwm.o
                                        0x19c4 (size before relaxing)
- .debug_str     0x00000000000063f0     0x15a0 build/obj/mcpwm.o
+ .debug_str     0x00000000000063a8     0x15a0 build/obj/mcpwm.o
                                        0x45f4 (size before relaxing)
- .debug_str     0x0000000000007990      0x227 build/obj/utils.o
+ .debug_str     0x0000000000007948      0x227 build/obj/utils.o
                                        0x1cc0 (size before relaxing)
- .debug_str     0x0000000000007bb7      0xecb build/obj/terminal.o
+ .debug_str     0x0000000000007b6f      0xecb build/obj/terminal.o
                                        0x39e4 (size before relaxing)
- .debug_str     0x0000000000008a82      0x1c9 build/obj/timeout.o
+ .debug_str     0x0000000000008a3a      0x1c9 build/obj/timeout.o
                                         0xa72 (size before relaxing)
- .debug_str     0x0000000000008c4b      0x471 build/obj/encoder.o
+ .debug_str     0x0000000000008c03      0x471 build/obj/encoder.o
                                        0x264d (size before relaxing)
- .debug_str     0x00000000000090bc      0x2b9 build/obj/flash_helper.o
+ .debug_str     0x0000000000009074      0x2b9 build/obj/flash_helper.o
                                        0x202c (size before relaxing)
- .debug_str     0x0000000000009375     0x1b07 build/obj/mc_interface.o
+ .debug_str     0x000000000000932d     0x1b3c build/obj/mc_interface.o
                                        0x6376 (size before relaxing)
- .debug_str     0x000000000000ae7c      0x996 build/obj/mcpwm_foc.o
+ .debug_str     0x000000000000ae69      0x996 build/obj/mcpwm_foc.o
                                        0x4a3c (size before relaxing)
- .debug_str     0x000000000000b812      0x219 build/obj/gpdrive.o
+ .debug_str     0x000000000000b7ff      0x219 build/obj/gpdrive.o
                                        0x39eb (size before relaxing)
- .debug_str     0x000000000000ba2b       0x36 build/obj/timer.o
+ .debug_str     0x000000000000ba18       0x36 build/obj/timer.o
                                        0x1644 (size before relaxing)
- .debug_str     0x000000000000ba61      0x152 build/obj/virtual_motor.o
+ .debug_str     0x000000000000ba4e      0x152 build/obj/virtual_motor.o
                                        0x1ab9 (size before relaxing)
- .debug_str     0x000000000000bbb3      0x102 build/obj/drv8350.o
+ .debug_str     0x000000000000bba0      0x102 build/obj/drv8350.o
                                        0x1bc1 (size before relaxing)
- .debug_str     0x000000000000bcb5      0x3ed build/obj/stm32f4xx_adc.o
+ .debug_str     0x000000000000bca2      0x3ed build/obj/stm32f4xx_adc.o
                                         0x906 (size before relaxing)
- .debug_str     0x000000000000c0a2       0xae build/obj/stm32f4xx_exti.o
+ .debug_str     0x000000000000c08f       0xae build/obj/stm32f4xx_exti.o
                                         0x437 (size before relaxing)
- .debug_str     0x000000000000c150      0x79b build/obj/stm32f4xx_tim.o
+ .debug_str     0x000000000000c13d      0x79b build/obj/stm32f4xx_tim.o
                                         0xe4e (size before relaxing)
 
-.debug_frame    0x0000000000000000     0x66e0
+.debug_frame    0x0000000000000000     0x66ac
  .debug_frame   0x0000000000000000       0x50 build/obj/crt1.o
  .debug_frame   0x0000000000000050       0x20 build/obj/vectors.o
  .debug_frame   0x0000000000000070       0xfc build/obj/chsys.o
@@ -9083,40 +9079,40 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_frame   0x00000000000021a4      0x130 build/obj/icu_lld.o
  .debug_frame   0x00000000000022d4      0x118 build/obj/serial_lld.o
  .debug_frame   0x00000000000023ec       0x30 build/obj/board.o
- .debug_frame   0x000000000000241c       0xec build/obj/main.o
- .debug_frame   0x0000000000002508       0xb0 build/obj/irq_handlers.o
- .debug_frame   0x00000000000025b8      0x234 build/obj/digital_filter.o
- .debug_frame   0x00000000000027ec       0x84 build/obj/ledpwm.o
- .debug_frame   0x0000000000002870      0x85c build/obj/mcpwm.o
- .debug_frame   0x00000000000030cc      0x2a8 build/obj/utils.o
- .debug_frame   0x0000000000003374      0x160 build/obj/terminal.o
- .debug_frame   0x00000000000034d4      0x128 build/obj/timeout.o
- .debug_frame   0x00000000000035fc      0x2b4 build/obj/encoder.o
- .debug_frame   0x00000000000038b0       0xf4 build/obj/flash_helper.o
- .debug_frame   0x00000000000039a4      0xd5c build/obj/mc_interface.o
- .debug_frame   0x0000000000004700      0xa90 build/obj/mcpwm_foc.o
- .debug_frame   0x0000000000005190      0x27c build/obj/gpdrive.o
- .debug_frame   0x000000000000540c       0x64 build/obj/timer.o
- .debug_frame   0x0000000000005470      0x13c build/obj/virtual_motor.o
- .debug_frame   0x00000000000055ac      0x264 build/obj/drv8350.o
- .debug_frame   0x0000000000005810      0x304 build/obj/stm32f4xx_adc.o
- .debug_frame   0x0000000000005b14       0xc0 build/obj/stm32f4xx_exti.o
- .debug_frame   0x0000000000005bd4      0x7d8 build/obj/stm32f4xx_tim.o
- .debug_frame   0x00000000000063ac       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-sf_floor.o)
- .debug_frame   0x00000000000063cc       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_fmod.o)
- .debug_frame   0x0000000000006414       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_log.o)
- .debug_frame   0x0000000000006464       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_sqrt.o)
- .debug_frame   0x00000000000064b4       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_fmod.o)
- .debug_frame   0x00000000000064f4       0x4c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_log.o)
- .debug_frame   0x0000000000006540       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_sqrt.o)
- .debug_frame   0x0000000000006560       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
- .debug_frame   0x0000000000006580       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_nan.o)
- .debug_frame   0x00000000000065a0       0xac /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x000000000000664c       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x000000000000669c       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_truncdfsf2.o)
- .debug_frame   0x00000000000066c0       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
+ .debug_frame   0x000000000000241c       0xb8 build/obj/main.o
+ .debug_frame   0x00000000000024d4       0xb0 build/obj/irq_handlers.o
+ .debug_frame   0x0000000000002584      0x234 build/obj/digital_filter.o
+ .debug_frame   0x00000000000027b8       0x84 build/obj/ledpwm.o
+ .debug_frame   0x000000000000283c      0x85c build/obj/mcpwm.o
+ .debug_frame   0x0000000000003098      0x2a8 build/obj/utils.o
+ .debug_frame   0x0000000000003340      0x160 build/obj/terminal.o
+ .debug_frame   0x00000000000034a0      0x128 build/obj/timeout.o
+ .debug_frame   0x00000000000035c8      0x2b4 build/obj/encoder.o
+ .debug_frame   0x000000000000387c       0xf4 build/obj/flash_helper.o
+ .debug_frame   0x0000000000003970      0xd5c build/obj/mc_interface.o
+ .debug_frame   0x00000000000046cc      0xa90 build/obj/mcpwm_foc.o
+ .debug_frame   0x000000000000515c      0x27c build/obj/gpdrive.o
+ .debug_frame   0x00000000000053d8       0x64 build/obj/timer.o
+ .debug_frame   0x000000000000543c      0x13c build/obj/virtual_motor.o
+ .debug_frame   0x0000000000005578      0x264 build/obj/drv8350.o
+ .debug_frame   0x00000000000057dc      0x304 build/obj/stm32f4xx_adc.o
+ .debug_frame   0x0000000000005ae0       0xc0 build/obj/stm32f4xx_exti.o
+ .debug_frame   0x0000000000005ba0      0x7d8 build/obj/stm32f4xx_tim.o
+ .debug_frame   0x0000000000006378       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-sf_floor.o)
+ .debug_frame   0x0000000000006398       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_fmod.o)
+ .debug_frame   0x00000000000063e0       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_log.o)
+ .debug_frame   0x0000000000006430       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_sqrt.o)
+ .debug_frame   0x0000000000006480       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_fmod.o)
+ .debug_frame   0x00000000000064c0       0x4c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_log.o)
+ .debug_frame   0x000000000000650c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-ef_sqrt.o)
+ .debug_frame   0x000000000000652c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x000000000000654c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_nan.o)
+ .debug_frame   0x000000000000656c       0xac /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x0000000000006618       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000000000006668       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x000000000000668c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-errno.o)
 
-.debug_loc      0x0000000000000000    0x15f6c
+.debug_loc      0x0000000000000000    0x15f27
  .debug_loc     0x0000000000000000      0x23e build/obj/chsys.o
  .debug_loc     0x000000000000023e       0x9f build/obj/chvt.o
  .debug_loc     0x00000000000002dd      0x31b build/obj/chschd.o
@@ -9146,24 +9142,24 @@ OUTPUT(build/BLDC_4_ChibiOS.elf elf32-littlearm)
  .debug_loc     0x000000000000759f      0x29c build/obj/spi_lld.o
  .debug_loc     0x000000000000783b      0x2a8 build/obj/icu_lld.o
  .debug_loc     0x0000000000007ae3      0x366 build/obj/serial_lld.o
- .debug_loc     0x0000000000007e49      0x113 build/obj/main.o
- .debug_loc     0x0000000000007f5c      0xbb3 build/obj/digital_filter.o
- .debug_loc     0x0000000000008b0f       0x82 build/obj/ledpwm.o
- .debug_loc     0x0000000000008b91     0x1bc2 build/obj/mcpwm.o
- .debug_loc     0x000000000000a753      0xd9b build/obj/utils.o
- .debug_loc     0x000000000000b4ee      0x732 build/obj/terminal.o
- .debug_loc     0x000000000000bc20       0x97 build/obj/timeout.o
- .debug_loc     0x000000000000bcb7      0x4a1 build/obj/encoder.o
- .debug_loc     0x000000000000c158      0x39a build/obj/flash_helper.o
- .debug_loc     0x000000000000c4f2     0x2415 build/obj/mc_interface.o
- .debug_loc     0x000000000000e907     0x34cb build/obj/mcpwm_foc.o
- .debug_loc     0x0000000000011dd2      0x37f build/obj/gpdrive.o
- .debug_loc     0x0000000000012151       0x57 build/obj/timer.o
- .debug_loc     0x00000000000121a8      0x2c8 build/obj/virtual_motor.o
- .debug_loc     0x0000000000012470      0xc14 build/obj/drv8350.o
- .debug_loc     0x0000000000013084      0x9c1 build/obj/stm32f4xx_adc.o
- .debug_loc     0x0000000000013a45      0x149 build/obj/stm32f4xx_exti.o
- .debug_loc     0x0000000000013b8e     0x23de build/obj/stm32f4xx_tim.o
+ .debug_loc     0x0000000000007e49       0xce build/obj/main.o
+ .debug_loc     0x0000000000007f17      0xbb3 build/obj/digital_filter.o
+ .debug_loc     0x0000000000008aca       0x82 build/obj/ledpwm.o
+ .debug_loc     0x0000000000008b4c     0x1bc2 build/obj/mcpwm.o
+ .debug_loc     0x000000000000a70e      0xd9b build/obj/utils.o
+ .debug_loc     0x000000000000b4a9      0x732 build/obj/terminal.o
+ .debug_loc     0x000000000000bbdb       0x97 build/obj/timeout.o
+ .debug_loc     0x000000000000bc72      0x4a1 build/obj/encoder.o
+ .debug_loc     0x000000000000c113      0x39a build/obj/flash_helper.o
+ .debug_loc     0x000000000000c4ad     0x2415 build/obj/mc_interface.o
+ .debug_loc     0x000000000000e8c2     0x34cb build/obj/mcpwm_foc.o
+ .debug_loc     0x0000000000011d8d      0x37f build/obj/gpdrive.o
+ .debug_loc     0x000000000001210c       0x57 build/obj/timer.o
+ .debug_loc     0x0000000000012163      0x2c8 build/obj/virtual_motor.o
+ .debug_loc     0x000000000001242b      0xc14 build/obj/drv8350.o
+ .debug_loc     0x000000000001303f      0x9c1 build/obj/stm32f4xx_adc.o
+ .debug_loc     0x0000000000013a00      0x149 build/obj/stm32f4xx_exti.o
+ .debug_loc     0x0000000000013b49     0x23de build/obj/stm32f4xx_tim.o
 
 Cross Reference Table
 
@@ -10512,7 +10508,6 @@ app_uartcomm_start_permanent                      build/obj/app_uartcomm.o
 app_uartcomm_stop                                 build/obj/app_uartcomm.o
                                                   build/obj/app.o
 apply_deadzone                                    build/obj/app_balance.o
-arraybau                                          build/obj/main.o
 asinf                                             /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-wf_asin.o)
                                                   build/obj/ahrs.o
                                                   build/obj/mcpwm.o
@@ -12018,7 +12013,6 @@ mcpwm_foc_get_pid_pos_now                         build/obj/mcpwm_foc.o
 mcpwm_foc_get_pid_pos_set                         build/obj/mcpwm_foc.o
 mcpwm_foc_get_rpm                                 build/obj/mcpwm_foc.o
                                                   build/obj/mc_interface.o
-                                                  build/obj/main.o
 mcpwm_foc_get_sampling_frequency_now              build/obj/mcpwm_foc.o
                                                   build/obj/mc_interface.o
 mcpwm_foc_get_state                               build/obj/mcpwm_foc.o
@@ -12036,7 +12030,6 @@ mcpwm_foc_get_tot_current_directional_filtered    build/obj/mcpwm_foc.o
                                                   build/obj/mc_interface.o
 mcpwm_foc_get_tot_current_filtered                build/obj/mcpwm_foc.o
                                                   build/obj/mc_interface.o
-                                                  build/obj/main.o
 mcpwm_foc_get_tot_current_in                      build/obj/mcpwm_foc.o
                                                   build/obj/mc_interface.o
 mcpwm_foc_get_tot_current_in_filtered             build/obj/mcpwm_foc.o

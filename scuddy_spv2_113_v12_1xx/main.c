@@ -27,6 +27,7 @@
 #include <stdlib.h>
 
 #include "hw.h"
+#include "spi_hil.c"
 #include "mc_interface.h"
 #include "mcpwm.h"
 #include "mcpwm_foc.h"
@@ -55,7 +56,7 @@
 #endif
 #include "shutdown.h"
 
-#include "spi_hil.c"
+
 
 /*
  * HW resources used:
@@ -190,13 +191,15 @@ int main(void) {
 	GPIOConfig();
 	SPI_Config();
 	SPI_Enable();
+	//settimer11();
 
-
-	while (1)
+	
+	for(int i = 0; i < 100; i++)
 	{
-		senddata();
+		senddebugdata();
 		chThdSleepMilliseconds(1);
 	}
+	
 	
 	// Initialize the enable pins here and disable them
 	// to avoid excessive current draw at boot because of

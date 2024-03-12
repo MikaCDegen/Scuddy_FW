@@ -1,9 +1,10 @@
-uint8_t data[8];
+uint8_t spi_data[8];
 
-uint32_t crchil(uint8_t *data, size_t len) {
+uint32_t crchil(uint8_t *crc_data, size_t len)
+{
     uint32_t crc = 0xFFFFFFFF;
     for (size_t i = 0; i < len; ++i) {
-        crc = crc ^ data[i];
+        crc = crc ^ crc_data[i];
         for (uint8_t j = 0; j < 8; j++) {
             if (crc & 1)
                 crc = (crc >> 1) ^ 0xEDB88320;
@@ -16,24 +17,25 @@ uint32_t crchil(uint8_t *data, size_t len) {
 
 void arraybau(void)
 {
+	
 	float rpmf = 2345;	//mcpwm_foc_get_rpm();
 	float ampf = 7892;	//mcpwm_foc_get_tot_current_filtered();
-	//uint8_t data[8]; // volt high(0) -> volt low(3) - amp high(4) -> amp low(7)
+	//uint8_t spi_data[8]; // volt high(0) -> volt low(3) - amp high(4) -> amp low(7)
 	uint32_t rpm = (int32_t)(rpmf); //2345
 	uint32_t amp = (int32_t)(ampf); //7892
 
-	data[0] = (rpm & 0xFF000000) >> 24;
-	data[1] = (rpm & 0x00FF0000) >> 16;
-	data[2] = (rpm & 0x0000FF00) >> 8;
-	data[3] = (rpm & 0x000000FF);
-	// Für Matlab: volt = (data[0] * 4278190080 + data[1] * 16711680 + data[2] * 65280 + data[3]) / 2000000
+	spi_data[0] = (rpm & 0xFF000000) >> 24;
+	spi_data[1] = (rpm & 0x00FF0000) >> 16;
+	spi_data[2] = (rpm & 0x0000FF00) >> 8;
+	spi_data[3] = (rpm & 0x000000FF);
+	// Für Matlab: volt = (spi_data[0] * 4278190080 + spi_data[1] * 16711680 + spi_data[2] * 65280 + spi_data[3]) / 2000000
 
-	data[4] = (amp & 0xFF000000) >> 24;
-	data[5] = (amp & 0x00FF0000) >> 16;
-	data[6] = (amp & 0x0000FF00) >> 8;
-	data[7] = (amp & 0x000000FF);
+	spi_data[4] = (amp & 0xFF000000) >> 24;
+	spi_data[5] = (amp & 0x00FF0000) >> 16;
+	spi_data[6] = (amp & 0x0000FF00) >> 8;
+	spi_data[7] = (amp & 0x000000FF);
 
-	//data[8] = crchil(data, 8);
+	//spi_data[8] = crchil(spi_data, 8);
 }
 
 void SPI_Config (void)
@@ -88,7 +90,7 @@ void CS_Disable (void)
 	palSetPad(GPIOA, 4);
 }
 
-void SPI_Transmit (uint8_t *data, int size)
+void SPI_Transmit (uint8_t *send_data, int size)
 {
 	
 	/************** STEPS TO FOLLOW *****************
@@ -102,7 +104,7 @@ void SPI_Transmit (uint8_t *data, int size)
 	while (i<size)
 	{
 	   while (!((SPI1->SR)&(1<<1))) {};  // wait for TXE bit to set -> This will indicate that the buffer is empty
-	   SPI1->DR = data[i];  // load the data into the Data Register
+	   SPI1->DR = send_data[i];  // load the data into the Data Register
 	   i++;
 	}	
 	
@@ -120,10 +122,10 @@ data.
 	temp = SPI1->SR;
 }
 
-void senddata()
+void senddebugdata(void)
 {
 	arraybau();
 	CS_Enable();	
-	SPI_Transmit(data, 8);
+	SPI_Transmit(spi_data, 8);
 	CS_Disable();
 }
